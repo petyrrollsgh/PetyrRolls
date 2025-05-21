@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../CWT_SiteTemplate.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<title>PetyrRolls - Short Stories</title>
+	</head>
+
+	<body>
+
+		<!-- HAMBURGER MENU FOR MOBILE-->
+		<button class="hamburgerMenu" aria-label="Toggle navigation">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<!-- SIDE NAVBAR -->
+		<nav class="sideNavbar">
+			<div class="navHeader">
+				<a href="../index.html"><h2>PETYR</h2><h2 class="logoAdjustment">ROLLS</h2></a>
+			</div>
+			<ul class="navLinks">
+				<li><a href="..\WaterTrails\WaterTrails_index.html">Water Trails</a></li>
+				<li><a href=".\ShortStories.html" class="active">Short Stories</a></li>
+				<li><a href="..\ElecEng\ElecEng_index.html">Electrical Eng.</a></li>
+				<li><a href="..\GeolHydroEcol\GeolHydroEcol_index.html">Geology Hydrology Ecology</a></li>
+				<!-- <li><a href="FranklinPascoConservationSites\FPCS_index.html">Mid-Columbia River Shrub Steppe and Riparian Restoration Areas</a></li> -->
+				<!-- <li><a href="UnivSensorInterface\UnivSensorInterface.html">Water Quality Analysis</a></li> -->
+				<!-- <li><a href="GeologyMap_qgis2web\GeologyMap_index.html">Geology Map</a></li> -->
+				<li class="footer">
+					<h3 style="font-size: calc(.51vw + 11px)">Contact Information</h3>
+					<a href="mailto:petyr.rieke@gmail.com"><p style="font-size: calc(.51vw + 11px)">petyr.rieke@gmail.com</p></a>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- PAGE CONTAINER AND CONTENT -->
+		<div class="pageContent">
+			<div class="pageSection" style="margin-bottom: 0 !important;">
+				<h1 style="margin-bottom: 5px;">Short Stories</h1>
+				<h3 style="padding-bottom: 2rem;">By Petyr</h3>
+				<p style="padding-bottom: 1rem;">I am occasionally inspired to write a short story and thought I would share some of these as they get to the first draft stage. They are often based upon my real life experience but are highly fictionalized. Enjoy.</p>
+
+				<!-- CARD LINKS TO STORIES -->
+				<div class="cardContainer" style="margin-bottom: 0 !important;">
+
+					<!-- STORY CARD 1 -->
+					<div class="navCard">
+						<a href="#" class="storyModalTrigger" data-story="dustyCrossroads">
+							<img src="../images/rockFormation.png" alt="Dusty Crossroads - Natural Rock Image" style="width:100%;height:28vh;border-radius:4px 4px 0 0;">
+							<div class="cardContent">
+								<h3>Dusty Crossroads</h3>
+								<p class="storySnippet">I watched the truck and horse trailer bang and clunk and rattle down the dirt road...</p>
+							</div>
+						</a>
+					</div>
+					
+					<!-- STORY CARD 2 -->
+					<div class="navCard">
+						<a href="#" class="storyModalTrigger" data-story="emptyHouse">
+							<img src="../images/cosmosMovement.png" alt="Empty House - Cosmos Movement Image" style="width:100%;height:28vh;border-radius:4px 4px 0 0;">
+							<div class="cardContent">
+								<h3>Empty House</h3>
+								<p class="storySnippet">"This is where I turn off" I said to the kid hitchhiking into Missoula...</p>
+							</div>
+						</a>
+					</div>
+					
+					<!-- STORY CARD 3 -->
+					<div class="navCard">
+						<a href="#" class="storyModalTrigger" data-story="swimmingHole">
+							<img src="../images/frozenRiver.png" alt="The Swimming Hole - Frozen River Image" style="width:100%;height:28vh;border-radius:4px 4px 0 0;">
+							<div class="cardContent">
+								<h3>The Swimming Hole</h3>
+								<p class="storySnippet">The old fella in the late model Chevy pickup dropped me off on the north edge...</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- STORY CONTENT FOR HIDDEN MODALS -->
+		<div id="dustyCrossroads" style="display:none;">
+			<h1>Dusty Crossroads</h1>
+			<p class="storyMeta">Pete Rieke, Jan. 2025</p>
+			<div class="storyText">
+				<object data="DustyCrossRoads_01-08-25.html" width="100%" height="500"></object>
+			</div>
+		</div>
+
+		<div id="emptyHouse" style="display:none;">
+			<h1>Empty House</h1>
+			<p class="storyMeta">Pete Rieke, Jan. 2025</p>
+			<div class="storyText">
+				<object data="EmptyHouse_01-09-25.html" width="100%" height="500"></object>
+			</div>
+		</div>
+
+		<div id="swimmingHole" style="display:none;">
+			<h1>The Swimming Hole</h1>
+			<p class="storyMeta">Pete Rieke, Jan. 2025</p>
+			<div class="storyText">
+				<object data="TheSwimmingHole_01-08-25.html" width="100%" height="500"></object>
+			</div>
+		</div>
+
+		<div id="storyModal" class="modal">
+			<span class="close storyClose">&times;</span>
+			<div class="modalContent">
+			  <div id="modalStoryContent" class="modal-body"></div>
+			</div>
+		  </div>
+			
+		<script src="../scripts.js"></script>
+	</body>
+</html>

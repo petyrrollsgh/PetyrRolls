@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CWT_SiteSheet</title>
+	<link rel="stylesheet" href="CWT_Sitetemplate.css">
+	<!-- <link rel="stylesheet" href="..\..\CWT_SiteTemplate.css"> -->
+	<style>	</style>
+</head>
+
+<body>
+	<header>
+		<p id="SiteTitleID">Tapteal Water Trail</p>
+	</header>
+	
+	<div class="CWTsiteDets">	
+		<aside style="flex-grow: 1; 
+			background-color: green;
+			border: 5px solid red;">
+			<p>Click to Enlarge Photo</p>
+			<img class="mySlides" id="myImg1" src="..\images\HornRapidsPark.jpg" alt="HornRapidsPark1" style="width:100px">
+			<img class="mySlides" id="myImg2" src="..\images\HornRapidsPark_062417.jpg" alt="HornRapidsPark2" style="width:100px">
+			<img class="mySlides" id="myImg3" src="..\images\PortageSign.jpg" alt="PortageSign" style="width:100px">
+			
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
+			<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var img1 = document.getElementById("myImg1");
+				var img2 = document.getElementById("myImg2");
+				var img3 = document.getElementById("myImg3");
+				var img4 = document.getElementById("myImg4");
+				var img5 = document.getElementById("myImg5");
+				var img6 = document.getElementById("myImg6");
+				const collection = document.getElementsByClassName("mySlides");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				img1.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+				}
+				img2.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+				}
+				img3.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+				}
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+					modal.style.display = "none";
+				}
+			</script>
+		</aside>
+		<article id="SiteArticle" style="flex-grow: 1; border: 5px solid red;"> 
+			<h1>Horn Rapids Park<br>
+			River Mile 19.7</h1>
+            <p>Horn Rapids Park is located about 1/4 mile from Wanawish Dam and is an excellent takeout for a paddle from the Benton City boat ramp. Camping is/was allowed here for the summer months, but is closed during winter. There appears to be some concern that Benton County may close the park entirely.  
+			<a href="https://www.bentoncountywa.gov/pview.aspx?id=55234&catid=0">Our Parks - Benton County WA</a> While the campground has restroom facilities, these are not near the boat ramp and with closure there may not be any restrooms available. <br><br>  
+            
+      The cement slab ramp is in decent shape with a modest slope.  It is adequate for all human-powered craft as well as small motor craft.  The ramp has plenty of paved parking, but not much shade or wind protection.  We give this a WAR-1 rating, and persons with disabilities will find this launch friendlier than most others <br><br>
+
+			HRP should be a takeout point only as all donwstream access sites are below the dangerous Wanawish dam </p>
+		</article>
+		<!-- End of Article -->
+	</div>
+	
+	<!-- <aside>aside</aside> -->
+	<footer>
+		<p id="SiteTitleID">Contact Information<br></br> Contact me at:<br>
+		petyr dot rieke at gmail dot com</p>
+	</footer>
+</body>

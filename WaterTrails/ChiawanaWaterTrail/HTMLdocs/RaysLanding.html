@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./CWT_SiteTemplate.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<title>Ray's Landing</title>
+	<style>
+		@import url("/CWT_SiteTemplate.css");
+	</style>	  
+</head>
+
+	<body>
+
+		<!-- HAMBURGER MENU FOR MOBILE-->
+		<button class="hamburgerMenu" aria-label="Toggle navigation">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<!-- SIDE NAVBAR -->
+		<nav class="sideNavbar">
+			<div class="navHeader">
+				<a href="../../../index.html"><h2>PETYR</h2><h2 class="logoAdjustment">ROLLS</h2></a>
+			</div>
+			<ul class="navLinks">
+				<!-- <li><a href="../../WaterTrails_index.html">Water Trails</a></li> -->
+				<!-- <li><a href=".\ShortStories\ShortStories.html">Short Stories</a></li>
+				<li><a href=".\ElecEng\ElecEng_index.html">Electrical Eng.</a></li>
+				<li><a href=".\GeolHydroEcol\GeolHydroEcol_index.html">Geology Hydrology Ecology</a></li> -->
+				<!-- <li><a href="FranklinPascoConservationSites\FPCS_index.html">Mid-Columbia River Shrub Steppe and Riparian Restoration Areas</a></li> -->
+				<!-- <li><a href="UnivSensorInterface\UnivSensorInterface.html">Water Quality Analysis</a></li> -->
+				<!-- <li><a href="GeologyMap_qgis2web\GeologyMap_index.html">Geology Map</a></li> -->
+				<li class="footer">
+					<h3>Contact Information</h3>
+					<a href="mailto:petyr.rieke@gmail.com"><p>petyr.rieke@gmail.com</p></a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="pageContent" style="margin-bottom: 2.5rem;">	
+			<div class="pageSection">
+				<h1>Chiawana Water Trail</h1>
+				<h3>Ray's Landing<br>River Mile 347.5</h3>
+				<br>
+			<img class="mySlides" id="myImg1" src="..\images\RayLawLanding17-0.jpg"        alt="RaysLanding1" style="width:100px"   >
+			<img class="mySlides" id="myImg2" src="..\images\RayLawLanding41.jpeg"         alt="RaysLanding2" style="width:100px"   >
+			<img class="mySlides" id="myImg3" src="..\images\RayLawLanding42.jpeg"         alt="RaysLanding3" style="width:100px"   >
+			<img class="mySlides" id="myImg4" src="..\images\RayLawLanding43-0.jpeg"       alt="RaysLanding4" style="width:100px"   >
+			<img class="mySlides" id="myImg5" src="..\images\RayLawLanding45.jpeg"         alt="RaysLanding5" style="width:100px"   >
+			<img class="mySlides" id="myImg6" src="..\images\RayLawLandingJosh32.jpg"      alt="RaysLanding6" style="width:100px"   >
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
+			<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var img1  = document.getElementById("myImg1");
+				var img2  = document.getElementById("myImg2");
+				var img3  = document.getElementById("myImg3");
+				var img4  = document.getElementById("myImg4");
+				var img5  = document.getElementById("myImg5");
+				var img6  = document.getElementById("myImg6");
+				const collection = document.getElementsByClassName("mySlides");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				img1.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+				img2.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+				img3.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+				img4.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+				img5.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+				img6.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+					modal.style.display = "none";
+				}
+			</script>
+			</div>
+			<div class="pageSection">
+				<p>Ray's Landing is a small grassy area easily visible from the river.  The USACE owns the land from the river up to the road and this is open to the public.  Ray owns the land above the road and hiking is permitted by permission from the owner.  His phone number can be found on the gate just north of the landing.  Ray purchased the land for the preservation value and he has shown great commitment to preserving the area from unwarranted development.  This area and points south are highly unstable and the ground is constantly sluffing.  A number of springs sprout from the hill side and these are entirely fed by irrigation of the farmlands on the flats above the cliff.  This is a lovely grassy spot with  modest slope down to the river's edge.  We give this a WAR-2 rating as the grass and up-hill slope make rolling a wheelchair a bit of a chore.</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./CWT_SiteTemplate.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<title>Helm, Selph, Dent</title>
+	<style>
+		@import url("/CWT_SiteTemplate.css");
+	</style>	  
+</head>
+
+	<body>
+
+		<!-- HAMBURGER MENU FOR MOBILE-->
+		<button class="hamburgerMenu" aria-label="Toggle navigation">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<!-- SIDE NAVBAR -->
+		<nav class="sideNavbar">
+			<div class="navHeader">
+				<a href="../../../index.html"><h2>PETYR</h2><h2 class="logoAdjustment">ROLLS</h2></a>
+			</div>
+			<ul class="navLinks">
+				<!-- <li><a href="../../WaterTrails_index.html">Water Trails</a></li> -->
+				<!-- <li><a href=".\ShortStories\ShortStories.html">Short Stories</a></li>
+				<li><a href=".\ElecEng\ElecEng_index.html">Electrical Eng.</a></li>
+				<li><a href=".\GeolHydroEcol\GeolHydroEcol_index.html">Geology Hydrology Ecology</a></li> -->
+				<!-- <li><a href="FranklinPascoConservationSites\FPCS_index.html">Mid-Columbia River Shrub Steppe and Riparian Restoration Areas</a></li> -->
+				<!-- <li><a href="UnivSensorInterface\UnivSensorInterface.html">Water Quality Analysis</a></li> -->
+				<!-- <li><a href="GeologyMap_qgis2web\GeologyMap_index.html">Geology Map</a></li> -->
+				<li class="footer">
+					<h3>Contact Information</h3>
+					<a href="mailto:petyr.rieke@gmail.com"><p>petyr.rieke@gmail.com</p></a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="pageContent" style="margin-bottom: 2.5rem;">	
+			<div class="pageSection">
+				<h1>Chiawana Water Trail</h1>
+				<h3>Helm Creek (RM 343), Selph Landing (RM 341) and Dent Wasteway (RM 340)</h3>
+				<br>
+			<img class="mySlides" id="myImg1" src="..\images\HelmCreek5.jpeg"       alt="HelmCreek1" style="width:100px"   >
+			<img class="mySlides" id="myImg2" src="..\images\HelmCreek58.jpeg"      alt="HelmCreek2" style="width:100px"   >
+			<img class="mySlides" id="myImg3" src="..\images\HelmCreek59.jpeg"      alt="HelmCreek3" style="width:100px"   >
+			<img class="mySlides" id="myImg4" src="..\images\HelmCreek60-0.jpeg"    alt="HelmCreek4" style="width:100px"   >
+			<img class="mySlides" id="myImg5" src="..\images\HelmCreekJosh9.jpg"    alt="HelmCreek5" style="width:100px"   >
+			<img class="mySlides" id="myImg6" src="..\images\SelphLanding73.jpeg"   alt="SelphLanding1" style="width:100px"   >
+			<img class="mySlides" id="myImg7" src="..\images\SelphLanding74.jpeg"   alt="SelphLanding2" style="width:100px"   >
+			<img class="mySlides" id="myImg8" src="..\images\SelphLanding75-0.jpeg" alt="SelphLanding3" style="width:100px"   >
+
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
+			<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var img1  = document.getElementById("myImg1");
+				var img2  = document.getElementById("myImg2");
+				var img3  = document.getElementById("myImg3");
+				var img4  = document.getElementById("myImg4");
+				var img5  = document.getElementById("myImg5");
+				var img6  = document.getElementById("myImg6");
+				var img7  = document.getElementById("myImg7");
+				var img8  = document.getElementById("myImg8");
+
+
+				const collection = document.getElementsByClassName("mySlides");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				img1.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+				img2.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+				img3.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+				img4.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+				img5.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+				img6.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+				img7.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+				img8.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+					modal.style.display = "none";
+				}
+			</script>
+			</div>
+			<div class="pageSection">
+				<p>Selph Landing is a major public access point for the river.  Parking is limited and there are no facilities.  However, the shoreline is smooth, gently sloped gravel and is an excellent site for kayakers and paddlers.  It is popular with fishermen but does not attract much motorized recreational use.  It is a good ending point for a day trip from Ringold Springs and a good starting point for a day trip to Chiawana Park.  We give this a WAR-1 rating for superior wheelchair access.</p>
+				<p>Below the Esquatzel Wasteway and down river past Selph Landing are a series of micro-canyons that are intermixed with residential areas.  Helm Creek is one example of a micro-canyon and it provides important wildlife habitat as well as potential neighborhood access to the river shore.  Selph Landing also has a micro-canyon.  Many others are dispersed along this reach of the river.   In some cases, these canyons provide for irrigation drainage and may have buried irrigation pipes.  These areas need protection both for wildlife and public access.</p>
+				<p>Below Selph Landing is the Dent Rd. wasteway.  This was an open cement canal and was recently converted to a buried pipe.  In that reengineering, areas of wetlands were drained and now empty directly into the river.  The irrigation district is interested in the efficiency with which it uses water and minimizing the hazard of open canals to the public and does not take into consideration the habitat and wildlife that may have made use of these man-made areas.  The Dent Rd. wasteway is a good example of how wastewater could have been used to create riparian habitat, provide recreation for the local neighborhood and prevent eutrophication of the river.  This wasteway is good example of how we might reenvision how waste irrigation water can benefit the local environment.</p> 
+			</div>
+		</div>
+	</body>
+</html>

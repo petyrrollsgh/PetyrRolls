@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../CWT_SiteTemplate.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<title>PetyrRolls - Elec. Eng</title>
+	</head>
+
+	<body>
+
+		<!-- HAMBURGER MENU FOR MOBILE-->
+		<button class="hamburgerMenu" aria-label="Toggle navigation">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<!-- SIDE NAVBAR -->
+		<nav class="sideNavbar">
+			<div class="navHeader">
+				<a href="../index.html"><h2>PETYR</h2><h2 class="logoAdjustment">ROLLS</h2></a>
+			</div>
+			<ul class="navLinks">
+				<li><a href="..\WaterTrails\WaterTrails_index.html">Water Trails</a></li>
+				<li><a href="..\ShortStories\ShortStories.html">Short Stories</a></li>
+				<li><a href=".\ElecEng_index.html" class="active">Electrical Eng.</a></li>
+				<li><a href="..\GeolHydroEcol\GeolHydroEcol_index.html">Geology Hydrology Ecology</a></li>
+				<!-- <li><a href="FranklinPascoConservationSites\FPCS_index.html">Mid-Columbia River Shrub Steppe and Riparian Restoration Areas</a></li> -->
+				<!-- <li><a href="UnivSensorInterface\UnivSensorInterface.html">Water Quality Analysis</a></li> -->
+				<!-- <li><a href="GeologyMap_qgis2web\GeologyMap_index.html">Geology Map</a></li> -->
+				<li class="footer">
+					<h3 style="font-size: calc(.51vw + 11px)">Contact Information</h3>
+					<a href="mailto:petyr.rieke@gmail.com"><p style="font-size: calc(.51vw + 11px)">petyr.rieke@gmail.com</p></a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="pageContent">	
+			<div class="pageSection" style="margin-bottom: 0 !important;">
+				<h1>Electrical Engineering</h1>
+				<p style="padding-bottom: .75rem;">Starting a little over two years ago, I wanted to build instrumentation for an inexpensive, open-source, water quality sensor system.  As part of that effort, 
+				I had to learn many facets of Electrical Engineering; although the breadth of my learning may not qualify me for the title of “Electrical Engineer.”  I wanted 
+				to record my learning experience and describe in some detail the projects that I have completed.  Below you will find Buttons leading to various subjects 
+				including the description of the “Universal Sensor Interface” (USI) which is the major goal of the project.  The USI is intended to interface with pH, turbidity, 
+				temperature, pressure and conductivity sensors that form the core sensors used for field analysis of water quality.</p>
+
+				<br>
+
+				<!-- CARD LINKS TO STORIES -->
+				<div class="cardContainer">
+
+					<!-- STORY CARD 1 -->
+					<div class="navCard">
+						<a href="#" class="storyModalTrigger" data-story="splitRail">
+							<div class="cardContent">
+								<h3>Split Rail SMPS</h3>
+								<p class="storySnippet">Custom Flyback SMPS delivers ±12V, 5V & 3.3V for precision instrumentation - docs & KiCad on GitHub.</p>
+								<span class="cardArrow">→</span>
+							</div>
+						</a>
+					</div>
+					
+					<!-- STORY CARD 2 -->
+					<div class="navCard">
+						<a href="#" class="storyModalTrigger" data-story="eChemInst">
+							<div class="cardContent">
+								<h3>Electrochem Instrumentation for EEs</h3>
+								<p class="storySnippet">Amps & feedback loops - electrochem demystified.</p>
+								<span class="cardArrow">→</span>
+							</div>
+						</a>
+					</div>
+					
+					<!-- STORY CARD 3 -->
+					<div class="navCard">
+						<a href="#" class="storyModalTrigger" data-story="univSensor">
+							<div class="cardContent">
+								<h3>Universal Sensor Interface</h3>
+								<p class="storySnippet">From pH to conductivity—one interface for all sensor types.</p>
+								<span class="cardArrow">→</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="pageSection" style="margin-bottom: 12rem">
+				<h1>Electrical Engineering as a Hobby</h1>
+				<p>I don’t consider myself a complete Electrical Engineer but I have always wanted to build my own circuits and kept up on the hobbyist perspective of actually designing and building a circuit.  Machining or etching your own PCB was possible; but in reality, this was a time-consuming nightmare and I even own a CNC machine and made my living as a chemist.  Further the CAD tools for designing PCBs were either expensive or clumsy.  Then a few years back KiCad became a full fledge design tool and PCB fabrication houses made making the PCBs too cheap to even worry about.</p>
+				<br>
+				<p>Still building a modestly complex circuit is not easy, while the tools make it easy to do the fabrication and design, one still has to know what to design and how to efficiently use the available tools.  In the rant linked below I review my experience and try to demonstrate that being an amateur Electrical Engineer is a fun and relatively inexpensive hobby.</p>  
+				<br>
+				<p><a href="A New Hobbyists Perspective On Learning Electrical Engineering.pdf" target="_blank"> Electrical Engineering as a Hobby</a></p>
+			</div>
+		</div>
+
+		<!-- STORY CONTENT FOR HIDDEN MODALS -->
+		<div id="splitRail" style="display:none;">
+			<h1>Split Rail, FlyBack SMPS</h1>
+			<p class="storyMeta">Pete Rieke</p>
+			<div class="storyText">
+				<object data="SplitRailSMPS.html" width="100%" height="500"></object>
+			</div>
+		</div>
+
+		<div id="eChemInst" style="display:none;">
+			<h1>Electrochem Instrumentation for EEs</h1>
+			<p class="storyMeta">Pete Rieke</p>
+			<div class="storyText">
+				<object data="EChemInst.html" width="100%" height="500"></object>
+			</div>
+		</div>
+
+		<div id="univSensor" style="display:none;">
+			<h1>Universal Sensor Interface</h1>
+			<p class="storyMeta">Pete Rieke</p>
+			<div class="storyText">
+				<object data="UnivSensorInterfaceV2.html" width="100%" height="500"></object>
+			</div>
+		</div>
+
+		<div id="storyModal" class="modal">
+			<span class="close storyClose">&times;</span>
+			<div class="modalContent">
+			  	<div id="modalStoryContent" class="modal-body"></div>
+			</div>
+		</div>
+
+		<script src="../scripts.js"></script>
+	</body>
+</html>

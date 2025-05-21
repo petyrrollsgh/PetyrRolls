@@ -1,0 +1,153 @@
+>Ringold Wasteway (RM 352.5), Parsons Canyon (RM 352), 
+Power Line Beach (RM 351), Agate Mines (RM 350.5) and Baxter Canyon (RM 350)</h1>
+			<img class="mySlides" id="myImg1"  src="..\images\RingoldWasteway10-0.jpeg"    alt="RingoldWasteway1" style="width:100px"   >
+			<img class="mySlides" id="myImg2"  src="..\images\RingoldWasteway12.jpeg"      alt="RingoldWasteway2" style="width:100px"   >
+			<img class="mySlides" id="myImg3"  src="..\images\RingoldWasteway13.jpeg"      alt="RingoldWasteway3" style="width:100px"   >
+			<img class="mySlides" id="myImg4"  src="..\images\RingoldWasteway91.jpeg"      alt="RingoldWasteway4" style="width:100px"   >
+			<img class="mySlides" id="myImg5"  src="..\images\RingoldWastewayJosh1.jpg"    alt="RingoldWasteway5" style="width:100px"   >
+			<img class="mySlides" id="myImg6"  src="..\images\RingoldWastewayJosh14-0.jpg" alt="RingoldWasteway6" style="width:100px"   >
+
+			<img class="mySlides" id="myImg7"  src="..\images\ParsonsCanyon1.jpeg"         alt="ParsonsCanyon1" style="width:100px"   >
+			<img class="mySlides" id="myImg8"  src="..\images\ParsonsCanyon15.jpeg"        alt="ParsonsCanyon2" style="width:100px"   >
+			<img class="mySlides" id="myImg9"  src="..\images\ParsonsCanyon17.jpeg"        alt="ParsonsCanyon3" style="width:100px"   >
+			<img class="mySlides" id="myImg10" src="..\images\ParsonsCanyon20.jpeg"        alt="ParsonsCanyon4" style="width:100px"   >
+			<img class="mySlides" id="myImg11" src="..\images\ParsonsCanyon21.jpeg"        alt="ParsonsCanyon5" style="width:100px"   >
+			<img class="mySlides" id="myImg12" src="..\images\ParsonsCanyon22.jpeg"        alt="ParsonsCanyon6" style="width:100px"   >
+			<img class="mySlides" id="myImg13" src="..\images\ParsonsCanyon24.jpeg"        alt="ParsonsCanyon7" style="width:100px"   >
+			<img class="mySlides" id="myImg14" src="..\images\ParsonsCanyon3-0.jpeg"       alt="ParsonsCanyon8" style="width:100px"   >
+			<img class="mySlides" id="myImg15" src="..\images\ParsonsCanyonJosh33.jpg"     alt="ParsonsCanyon9" style="width:100px"   >
+
+			<img class="mySlides" id="myImg16" src="..\images\PowerLineBeach27.jpeg"       alt="PowerLineBeach1" style="width:100px"   >
+			<img class="mySlides" id="myImg17" src="..\images\PowerLineBeach28.jpeg"       alt="PowerLineBeach2" style="width:100px"   >
+			<img class="mySlides" id="myImg18" src="..\images\PowerLineBeach29.jpeg"       alt="PowerLineBeach3" style="width:100px"   >
+			<img class="mySlides" id="myImg19" src="..\images\PowerLineBeach31.jpeg"       alt="PowerLineBeach4" style="width:100px"   >
+			<img class="mySlides" id="myImg20" src="..\images\PowerLineBeach33.jpeg"       alt="PowerLineBeach5" style="width:100px"   >
+			<img class="mySlides" id="myImg21" src="..\images\PowerLineBeachJosh30-0.jpg"  alt="PowerLineBeach6" style="width:100px"   >
+			<img class="mySlides" id="myImg22" src="..\images\PowerLineBeachJosh40.jpg"    alt="PowerLineBeach7" style="width:100px"   >
+
+			<img class="mySlides" id="myImg23" src="..\images\AgateBeach34-0.jpeg"         alt="AgateBeach1" style="width:100px"   >
+			<img class="mySlides" id="myImg24" src="..\images\AgateBeach35.jpeg"           alt="AgateBeach2" style="width:100px"   >
+			<img class="mySlides" id="myImg25" src="..\images\AgateBeachJosh11.jpg"        alt="AgateBeach3" style="width:100px"   >
+			<img class="mySlides" id="myImg26" src="..\images\AgateBeachJosh25.jpg"        alt="AgateBeach4" style="width:100px"   >
+			<img class="mySlides" id="myImg27" src="..\images\AgateBeachJosh31.jpg"        alt="AgateBeach5" style="width:100px"   >
+			<img class="mySlides" id="myImg28" src="..\images\AgateBeachJosh46.jpg"        alt="AgateBeach6" style="width:100px"   >
+			<img class="mySlides" id="myImg29" src="..\images\AgateBeachJosh53.jpg"        alt="AgateBeach7" style="width:100px"   >
+
+			<img class="mySlides" id="myImg1" src="..\images\RayLawLanding17-0.jpg"        alt="RaysLanding1" style="width:100px"   >
+			<img class="mySlides" id="myImg2" src="..\images\RayLawLanding41.jpeg"         alt="RaysLanding2" style="width:100px"   >
+			<img class="mySlides" id="myImg3" src="..\images\RayLawLanding42.jpeg"         alt="RaysLanding3" style="width:100px"   >
+			<img class="mySlides" id="myImg4" src="..\images\RayLawLanding43-0.jpeg"       alt="RaysLanding4" style="width:100px"   >
+			<img class="mySlides" id="myImg5" src="..\images\RayLawLanding45.jpeg"         alt="RaysLanding5" style="width:100px"   >
+			<img class="mySlides" id="myImg6" src="..\images\RayLawLandingJosh32.jpg"      alt="RaysLanding6" style="width:100px"   >
+			
+			
+			<img class="mySlides" id="myImg1" src="..\images\CarbodyBeach4.jpeg"           alt="CarbodyBeach1" style="width:100px"   >
+			<img class="mySlides" id="myImg2" src="..\images\CarbodyBeach47-0.jpeg"        alt="CarbodyBeach2" style="width:100px"   >
+			<img class="mySlides" id="myImg3" src="..\images\CarbodyBeach51.jpeg"          alt="CarbodyBeach3" style="width:100px"   >
+			<img class="mySlides" id="myImg4" src="..\images\CarbodyBeach52.jpeg"          alt="CarbodyBeach4" style="width:100px"   >
+			<img class="mySlides" id="myImg5" src="..\images\CarbodyBeach54.jpeg"          alt="CarbodyBeach5" style="width:100px"   >
+			<img class="mySlides" id="myImg6" src="..\images\CarbodyBeach55.jpeg"          alt="CarbodyBeach6" style="width:100px"   >
+			<img class="mySlides" id="myImg7" src="..\images\CarbodyBeachJosh13.jpg"       alt="CarbodyBeach7" style="width:100px"   >
+			<img class="mySlides" id="myImg8" src="..\images\CarbodyBeachJosh27.jpg"       alt="CarbodyBeach8" style="width:100px"   >
+			<img class="mySlides" id="myImg9" src="..\images\CarbodyBeachJosh39.jpg"       alt="CarbodyBeach9" style="width:100px"   >
+			<img class="mySlides" id="myImg10" src="..\images\CarbodyBeachJosh41.jpg"       alt="CarbodyBeach10" style="width:100px"   >
+			
+			<img class="mySlides" id="myImg1" src="..\images\HelmCreek5.jpeg"       alt="HelmCreek1" style="width:100px"   >
+			<img class="mySlides" id="myImg2" src="..\images\HelmCreek58.jpeg"      alt="HelmCreek2" style="width:100px"   >
+			<img class="mySlides" id="myImg3" src="..\images\HelmCreek59.jpeg"      alt="HelmCreek3" style="width:100px"   >
+			<img class="mySlides" id="myImg4" src="..\images\HelmCreek60-0.jpeg"    alt="HelmCreek4" style="width:100px"   >
+			<img class="mySlides" id="myImg5" src="..\images\HelmCreekJosh9.jpg"    alt="HelmCreek5" style="width:100px"   >
+			<img class="mySlides" id="myImg6" src="..\images\SelphLanding73.jpeg"   alt="SelphLanding1" style="width:100px"   >
+			<img class="mySlides" id="myImg7" src="..\images\SelphLanding74.jpeg"   alt="SelphLanding2" style="width:100px"   >
+			<img class="mySlides" id="myImg8" src="..\images\SelphLanding75-0.jpeg" alt="SelphLanding3" style="width:100px"   >
+
+			<img class="mySlides" id="myImg1" src="..\images\TheFlume56-0.jpeg"          alt="TheFlume1" style="width:100px"   >
+			<img class="mySlides" id="myImg2" src="..\images\TheFlumeJosh2.jpg"          alt="TheFlume2" style="width:100px"   >
+			<img class="mySlides" id="myImg3" src="..\images\TheFlumeJosh18.jpg"         alt="TheFlume3" style="width:100px"   >
+			<img class="mySlides" id="myImg4" src="..\images\TheFlumeJosh23.jpg"         alt="TheFlume4" style="width:100px"   >
+			<img class="mySlides" id="myImg5" src="..\images\EsquatzelChannel6-0.jpeg"   alt="EsquatzelChannel1" style="width:100px"   >
+			<img class="mySlides" id="myImg6" src="..\images\EsquatzelChannel7.jpeg"     alt="EsquatzelChannel2" style="width:100px"   >
+			<img class="mySlides" id="myImg7" src="..\images\EsquatzelChannel8.jpeg"     alt="EsquatzelChannel3" style="width:100px"   >
+			<img class="mySlides" id="myImg8" src="..\images\EsquatzelChannelJosh22.jpg" alt="EsquatzelChannel4" style="width:100px"   >
+			<img class="mySlides" id="myImg9" src="..\images\EsquatzelChannelJosh48.jpg" alt="EsquatzelChannel5" style="width:100px"   >
+
+BentonCity-1.jpg
+BentonCity-2.jpg
+BentonCity-3.jpg
+
+
+
+
+
+RankinCanyon36-0.jpeg
+RankinCanyon38.jpeg
+
+RingoldLanding85.jpeg
+RingoldLanding86.jpeg
+RingoldLanding87.jpeg
+RingoldLanding88.jpeg
+RingoldLanding89.jpeg
+RingoldLandingJosh19-0.jpg
+
+
+
+var img1  = document.getElementById("myImg1");
+var img2  = document.getElementById("myImg2");
+var img3  = document.getElementById("myImg3");
+var img4  = document.getElementById("myImg4");
+var img5  = document.getElementById("myImg5");
+var img6  = document.getElementById("myImg6");
+var img7  = document.getElementById("myImg7");
+var img8  = document.getElementById("myImg8");
+var img9  = document.getElementById("myImg9");
+var img10 = document.getElementById("myImg10");
+var img11 = document.getElementById("myImg11");
+var img12 = document.getElementById("myImg12");
+var img13 = document.getElementById("myImg13");
+var img14 = document.getElementById("myImg14");
+var img15 = document.getElementById("myImg15");
+var img16 = document.getElementById("myImg16");
+var img17 = document.getElementById("myImg17");
+var img18 = document.getElementById("myImg18");
+var img19 = document.getElementById("myImg19");
+var img20 = document.getElementById("myImg20");
+var img21 = document.getElementById("myImg21");
+var img22 = document.getElementById("myImg22");
+var img23 = document.getElementById("myImg23");
+var img24 = document.getElementById("myImg24");
+var img25 = document.getElementById("myImg25");
+var img26 = document.getElementById("myImg26");
+var img27 = document.getElementById("myImg27");
+var img28 = document.getElementById("myImg28");
+var img29 = document.getElementById("myImg29");
+
+
+img1.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img2.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img3.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img4.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img5.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img6.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img7.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img8.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img9.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img10.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img11.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img12.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img13.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img14.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img15.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img16.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img17.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img18.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img19.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img20.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img21.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img22.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img23.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img24.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img25.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img26.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img27.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img28.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
+img29.onclick = function(){modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt;}
