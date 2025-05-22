@@ -5,14 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./CWT_SiteTemplate.css">
+	<link rel="stylesheet" href="../../../CWT_SiteTemplate.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<title>Ringold Springs</title>
-	<style>
-		@import url("/CWT_SiteTemplate.css");
-	</style>	  
+	<title>Ringold Springs</title>  
 </head>
 
 	<body>
@@ -29,14 +26,13 @@
 			<div class="navHeader">
 				<a href="../../../index.html"><h2>PETYR</h2><h2 class="logoAdjustment">ROLLS</h2></a>
 			</div>
-			<ul class="navLinks">
-				<!-- <li><a href="../../WaterTrails_index.html">Water Trails</a></li> -->
-				<!-- <li><a href=".\ShortStories\ShortStories.html">Short Stories</a></li>
-				<li><a href=".\ElecEng\ElecEng_index.html">Electrical Eng.</a></li>
-				<li><a href=".\GeolHydroEcol\GeolHydroEcol_index.html">Geology Hydrology Ecology</a></li> -->
-				<!-- <li><a href="FranklinPascoConservationSites\FPCS_index.html">Mid-Columbia River Shrub Steppe and Riparian Restoration Areas</a></li> -->
-				<!-- <li><a href="UnivSensorInterface\UnivSensorInterface.html">Water Quality Analysis</a></li> -->
-				<!-- <li><a href="GeologyMap_qgis2web\GeologyMap_index.html">Geology Map</a></li> -->
+			<ul class="navImages">
+				<img class="mapImages" id="myImg1" src="..\images\RingoldLandingJosh19-0.jpg" alt="RingoldLanding1">
+				<img class="mapImages" id="myImg2" src="..\images\RingoldLanding85.jpeg" alt="RingoldLanding2">
+				<img class="mapImages" id="myImg3" src="..\images\RingoldLanding86.jpeg" alt="RingoldLanding3">
+				<img class="mapImages" id="myImg4" src="..\images\RingoldLanding87.jpeg" alt="RingoldLanding4">
+				<img class="mapImages" id="myImg5" src="..\images\RingoldLanding88.jpeg" alt="RingoldLanding5">
+				<img class="mapImages" id="myImg6" src="..\images\RingoldLanding89.jpeg" alt="RingoldLanding6">	
 				<li class="footer">
 					<h3>Contact Information</h3>
 					<a href="mailto:petyr.rieke@gmail.com"><p>petyr.rieke@gmail.com</p></a>
@@ -48,71 +44,6 @@
 			<div class="pageSection">
 				<h1>Chiawana Water Trail</h1>
 				<h3>Ringold Springs<br>River Mile 354.5</h3>
-				<br>
-			<img class="mySlides" id="myImg1" src="..\images\RingoldLandingJosh19-0.jpg" alt="RingoldLanding1" style="width:100px">
-			<img class="mySlides" id="myImg2" src="..\images\RingoldLanding85.jpeg" alt="RingoldLanding2" style="width:100px">
-			<img class="mySlides" id="myImg3" src="..\images\RingoldLanding86.jpeg" alt="RingoldLanding3" style="width:100px">
-			<img class="mySlides" id="myImg4" src="..\images\RingoldLanding87.jpeg" alt="RingoldLanding4" style="width:100px">
-			<img class="mySlides" id="myImg5" src="..\images\RingoldLanding88.jpeg" alt="RingoldLanding5" style="width:100px">
-			<img class="mySlides" id="myImg6" src="..\images\RingoldLanding89.jpeg" alt="RingoldLanding6" style="width:100px">			
-
-			<div id="myModal" class="modal">
-				<span class="close">&times;</span>
-				<img class="modal-content" id="img01">
-				<div id="caption"></div>
-			</div>
-			<script>
-				// Get the modal
-				var modal = document.getElementById("myModal");
-
-				// Get the image and insert it inside the modal - use its "alt" text as a caption
-				var img1 = document.getElementById("myImg1");
-				var img2 = document.getElementById("myImg2");
-				var img3 = document.getElementById("myImg3");
-				var img4 = document.getElementById("myImg4");
-				var img5 = document.getElementById("myImg5");
-				var img6 = document.getElementById("myImg6");
-				const collection = document.getElementsByClassName("mySlides");
-				var modalImg = document.getElementById("img01");
-				var captionText = document.getElementById("caption");
-				img1.onclick = function(){
-					modal.style.display = "block";
-					modalImg.src = this.src;
-					captionText.innerHTML = this.alt;
-				}
-				img2.onclick = function(){
-					modal.style.display = "block";
-					modalImg.src = this.src;
-					captionText.innerHTML = this.alt;
-				}
-				img3.onclick = function(){
-					modal.style.display = "block";
-					modalImg.src = this.src;
-					captionText.innerHTML = this.alt;
-				}
-				img4.onclick = function(){
-					modal.style.display = "block";
-					modalImg.src = this.src;
-					captionText.innerHTML = this.alt;
-				}
-				img5.onclick = function(){
-					modal.style.display = "block";
-					modalImg.src = this.src;
-					captionText.innerHTML = this.alt;
-				}
-				img6.onclick = function(){
-					modal.style.display = "block";
-					modalImg.src = this.src;
-					captionText.innerHTML = this.alt;
-				}
-				// Get the <span> element that closes the modal
-				var span = document.getElementsByClassName("close")[0];
-
-				// When the user clicks on <span> (x), close the modal
-				span.onclick = function() { 
-					modal.style.display = "none";
-				}
-			</script>
 			</div>
 			<div class="pageSection">
 				<p>Ringold Springs is a major put-in and take-out point for paddling the Columbia River.  It is an excellent terminus for the long ~32-mile paddle along the Hanford Reach.  It is also an excellent starting point for many points down stream and the paddle from Ringold to Selph Landing is about 13 miles.  Paddlers will encounter few motor boats along this section.  Ringold is still part of the Hanford Reach and the head of Wallula Lake is a few miles downstream.  Hence water flows increases once you enter the main river and paddling back up stream is feasible only against the shoreline.</p>
@@ -120,5 +51,13 @@
 				<p>This is a popular fishing spot during major salmon runs and can be fairly crowded.  Most of the time it has only a few visitors.  As a WDFW site, a Discover Pass is required.  Camping is permitted and the restroom facilities are ADA accessible.</p>
 			</div>
 		</div>
+																										
+		<div id="myModal" class="modal">
+			<span class="close imageClose">&times;</span>
+			<img class="modalContent" id="img01">
+			<div id="caption"></div>
+		</div>
+
+		<script src="../../../scripts.js"></script>
 	</body>
 </html>

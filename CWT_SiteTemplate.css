@@ -167,6 +167,18 @@ hr {
     margin: 0;
 }
 
+	.navImages {
+		max-width: calc(10.5vw + 8rem);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0;
+		gap: .5rem;
+	}
+		ul.navImages {
+			overflow-y:visible;
+		}
+
 .navLinks li a {
 	position: relative;
 	display: inline-block;
@@ -296,6 +308,12 @@ hr {
 	max-width:400px;
 }
 
+.mapImages {
+	flex-wrap: wrap;
+	max-width: calc(2.5vw + 5rem);
+	height: auto;
+}
+
 
 /* CAROUSEL AND IMAGE STYLES */
 .carouselContainer {
@@ -367,17 +385,7 @@ hr {
 			opacity: 0.8;
 		}
 
-#myImg1 {
-	border-radius: 5px;
-	cursor: pointer;
-	transition: 0.3s;
-}
-#myImg2 {
-	border-radius: 5px;
-	cursor: pointer;
-	transition: 0.3s;
-}
-#myImg3 {
+#myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg6, #myImg7, #myImg8, #myImg9, #myImg10, #myImg11, #myImg12, #myImg13, #myImg14, #myImg15, #myImg16, #myImg17, #myImg18, #myImg19, #myImg20, #myImg21, #myImg22, #myImg23, #myImg24, #myImg25, #myImg26, #myImg27, #myImg28, #myImg29, #myImg30 {
 	border-radius: 5px;
 	cursor: pointer;
 	transition: 0.3s;
@@ -386,7 +394,33 @@ hr {
 #myImg1:hover {opacity: 0.7;}
 #myImg2:hover {opacity: 0.7;}
 #myImg3:hover {opacity: 0.7;}
-
+#myImg4:hover {opacity: 0.7;}
+#myImg5:hover {opacity: 0.7;}
+#myImg6:hover {opacity: 0.7;}
+#myImg7:hover {opacity: 0.7;}
+#myImg8:hover {opacity: 0.7;}
+#myImg9:hover {opacity: 0.7;}
+#myImg10:hover {opacity: 0.7;}
+#myImg11:hover {opacity: 0.7;}
+#myImg12:hover {opacity: 0.7;}
+#myImg13:hover {opacity: 0.7;}
+#myImg14:hover {opacity: 0.7;}
+#myImg15:hover {opacity: 0.7;}
+#myImg16:hover {opacity: 0.7;}
+#myImg17:hover {opacity: 0.7;}
+#myImg18:hover {opacity: 0.7;}
+#myImg19:hover {opacity: 0.7;}
+#myImg20:hover {opacity: 0.7;}
+#myImg21:hover {opacity: 0.7;}
+#myImg22:hover {opacity: 0.7;}
+#myImg23:hover {opacity: 0.7;}
+#myImg24:hover {opacity: 0.7;}
+#myImg25:hover {opacity: 0.7;}
+#myImg26:hover {opacity: 0.7;}
+#myImg27:hover {opacity: 0.7;}
+#myImg28:hover {opacity: 0.7;}
+#myImg29:hover {opacity: 0.7;}
+#myImg30:hover {opacity: 0.7;}
 
 /* IMAGE MODAL CONTENT */
 .modalContent {

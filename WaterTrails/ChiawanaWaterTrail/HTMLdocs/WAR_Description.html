@@ -5,14 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./CWT_SiteTemplate.css">
+	<link rel="stylesheet" href="../../../CWT_SiteTemplate.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<title>Water Access Rating</title>
-	<style>
-		@import url("/CWT_SiteTemplate.css");
-	</style>	  
+	<title>Water Access Rating</title>  
 </head>
 
 	<body>
@@ -29,14 +26,9 @@
 			<div class="navHeader">
 				<a href="../../../index.html"><h2>PETYR</h2><h2 class="logoAdjustment">ROLLS</h2></a>
 			</div>
-			<ul class="navLinks">
-				<!-- <li><a href="../../WaterTrails_index.html">Water Trails</a></li> -->
-				<!-- <li><a href=".\ShortStories\ShortStories.html">Short Stories</a></li>
-				<li><a href=".\ElecEng\ElecEng_index.html">Electrical Eng.</a></li>
-				<li><a href=".\GeolHydroEcol\GeolHydroEcol_index.html">Geology Hydrology Ecology</a></li> -->
-				<!-- <li><a href="FranklinPascoConservationSites\FPCS_index.html">Mid-Columbia River Shrub Steppe and Riparian Restoration Areas</a></li> -->
-				<!-- <li><a href="UnivSensorInterface\UnivSensorInterface.html">Water Quality Analysis</a></li> -->
-				<!-- <li><a href="GeologyMap_qgis2web\GeologyMap_index.html">Geology Map</a></li> -->
+			<ul class="navImages">
+				<img class="mapImages" id="myImg1" src="..\images\DavisLake.jpg"    alt="Davis Lake Image"    >
+				<img class="mapImages" id="myImg2" src="..\images\ScottsIsland.jpg" alt="Scotts Island Image" >
 				<li class="footer">
 					<h3>Contact Information</h3>
 					<a href="mailto:petyr.rieke@gmail.com"><p>petyr.rieke@gmail.com</p></a>
@@ -48,45 +40,8 @@
 			<div class="pageSection">
 				<h1>Tapteal Water Trail</h1>
 				<h3>Water Access Rating (WAR)</h3>
-				<br>
-			<img class="mySlides" id="myImg1" src="..\images\DavisLake.jpg"    alt="Davis Lake Image"    >
-			<img class="mySlides" id="myImg2" src="..\images\ScottsIsland.jpg" alt="Scotts Island Image" >
-			<div id="myModal" class="modal">
-				<span class="close">&times;</span>
-				<img class="modal-content" id="img01">
-				<div id="caption"></div>
-			</div>
-			<script>
-				// Get the modal
-				var modal = document.getElementById("myModal");
-
-				// Get the image and insert it inside the modal - use its "alt" text as a caption
-				var img1 = document.getElementById("myImg1");
-				var img2 = document.getElementById("myImg2");
-				const collection = document.getElementsByClassName("mySlides");
-				var modalImg = document.getElementById("img01");
-				var captionText = document.getElementById("caption");
-				img1.onclick = function(){
-					modal.style.display = "block";
-					modalImg.src = this.src;
-					captionText.innerHTML = this.alt;
-				}
-				img2.onclick = function(){
-					modal.style.display = "block";
-					modalImg.src = this.src;
-					captionText.innerHTML = this.alt;
-				}
-				// Get the <span> element that closes the modal
-				var span = document.getElementsByClassName("close")[0];
-
-				// When the user clicks on <span> (x), close the modal
-				span.onclick = function() { 
-					modal.style.display = "none";
-				}
-			</script>
 			</div>
 			<div class="pageSection">
-				<h1>Water Access Rating (WAR)</h1>
 				<p>Paddling is a great equalizer between able bodied and mobility impaired people. Indeed, an athletic wheelchair user or “roller” may well have greater upper body strength and endurance than many walking individuals. However, most boat ramps even those with docks are not friendly to rollers. Indeed, most docks are designed for conventional motorized water craft and are too high for use by paddlers of any ability, forcing us to use the ramp or an adjacent beach as a loading area. Further, many river access points are sandy, gravelly or rough which makes wheelchair access tricky. Some access points may be brushy, rocky, slippery, steep or even have short cliffs impeding progress. It is helpful to know beforehand the logistics of river access as this impacts the physical strength of the crew available to assist the roller in and out of their kayak. And hence it impacts trip planning, selection of boats and evaluation of all team members physical prowess. </p> 
 
 				<p>We provide the following preliminary WAR rating system for your consideration. Suggestions for improvements are welcome.</p>
@@ -112,5 +67,13 @@
 				<p>There are many other tricks of the trade. A long and multifarious subject for another time. </p>
 			</div>
 		</div>
+				
+		<div id="myModal" class="modal">
+			<span class="close imageClose">&times;</span>
+			<img class="modalContent" id="img01">
+			<div id="caption"></div>
+		</div>
+
+		<script src="../../../scripts.js"></script>
 	</body>
 </html>
