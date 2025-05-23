@@ -133,9 +133,11 @@ hr {
 	text-align: right;
     width: calc(11.5vw + 8.5rem);
     min-height: 100%;
+	height: 100vh;
     background-color: #2E4057;
     color: #FDF6ED;
     transition: transform 0.3s ease-in-out;
+	overflow: hidden;
 }
 
 	.sideNavbar::after {
@@ -174,10 +176,8 @@ hr {
 		justify-content: center;
 		padding: 0;
 		gap: .5rem;
+		overflow-y: auto;
 	}
-		ul.navImages {
-			overflow-y:visible;
-		}
 
 .navLinks li a {
 	position: relative;
