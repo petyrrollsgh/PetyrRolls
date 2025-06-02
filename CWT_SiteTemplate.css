@@ -196,12 +196,13 @@ hr {
 		content: '';
 		position: absolute;
 		bottom: 0;
-		left: 50%;
+		left: calc(50% - .6vw);
 		width: 0;
 		height: 2px;
 		background-color: #EFC11A;
 		transition: all 0.4s ease;
 		transform: translateX(-50%);
+		max-width: calc(100% - 3.5rem);
 	}
 
 	.navLinks li a:hover::after {
