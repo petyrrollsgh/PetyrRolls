@@ -315,6 +315,11 @@ hr {
 	height: auto;
 }
 
+	.mapImageContainer{
+		width: calc(11.5vw + 8.5rem);
+		height: 60vh;
+	}
+
 
 /* CAROUSEL AND IMAGE STYLES */
 .carouselContainer {
