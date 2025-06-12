@@ -329,6 +329,7 @@ hr {
     margin: 2rem auto;
     position: relative;
     overflow: hidden;
+	filter: drop-shadow(0 4px 10px #E8DCCF);
 }
 
 	.carousel {
@@ -362,8 +363,9 @@ hr {
 			margin: 0 auto;
 			object-fit: contain;
 			border-radius: 5px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 		}
-  
+
 .carouselDots {
 	text-align: center;
 	margin-top: 15px;
@@ -557,6 +559,30 @@ hr {
     border: none;
 }
 
+/* STORY PAGE STYLES */
+
+.storyHeaderContainer {
+	padding: 0 calc(3vw + 2rem);
+}
+
+.storyHeaderText {
+	flex: 1;
+}
+
+.storyHeaderImage {
+	flex: 1;
+}
+
+	.storyHeaderImage img {
+		filter: drop-shadow(0 4px 10px #d5c9bd);
+	}
+
+.backIconWrapper {
+	display: flex;
+	justify-content: flex-start;
+	padding: 0;
+	margin: 0;
+}
 
 /* CARD STYLES */
 .cardContainer {
@@ -692,4 +718,8 @@ hr {
 			display: flex;
 			flex-wrap: wrap;
 		}
+
+	.storyHeaderImage img {
+		min-width: 50vw !important;
+	}
 }
