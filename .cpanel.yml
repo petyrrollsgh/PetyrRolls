@@ -1,5 +1,4 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/petyrr5/public_html/
-    - /bin/cp -R * $DEPLOYPATH
+    - /bin/rsync -a --exclude='.git' --exclude='.cpanel.yml' ./ /home/petyrr5/public_html/
