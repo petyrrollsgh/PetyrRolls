@@ -1,23 +1,64 @@
 name: Deploy to cPanel
-on: push
+on: 
+  push:
+    branches: [ master ]  # Change to 'main' if needed
+
 jobs:
   deploy:
     runs-on: ubuntu-22.04
+    timeout-minutes: 5  # Auto-cancel if stuck
+    
     steps:
       - uses: actions/checkout@v3
       
+      # ======================
+      # DEBUG SECTION
+      # ======================
+      - name: Show Environment
+        run: |
+          echo "Runner OS: $(uname -a)"
+          echo "Home: $HOME"
+          ls -la $HOME/.ssh || echo "No .ssh dir"
+          
+      # ======================
+      # SSH SETUP
+      # ======================      
       - name: Setup SSH
         run: |
           mkdir -p $HOME/.ssh
+          chmod 700 $HOME/.ssh
           echo "${{ secrets.DEPLOY_SSH_KEY }}" > $HOME/.ssh/id_ed25519
           chmod 600 $HOME/.ssh/id_ed25519
-          echo "ecngx285.inmotionhosting.com ecdsa-sha2-nistp256 AAAAE2VjZH..." >> $HOME/.ssh/known_hosts
+          echo "ecngx285.inmotionhosting.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI..." > $HOME/.ssh/known_hosts
+          echo "SSH setup complete:"
+          ls -la $HOME/.ssh/
           
+      # ======================
+      # CONNECTION TEST
+      # ======================
       - name: Test Connection
-        run: ssh -i $HOME/.ssh/id_ed25519 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} "echo 'Connected!'"
+        timeout-minutes: 2
+        run: |
+          echo "Testing raw port 22 access..."
+          nc -zv ecngx285.inmotionhosting.com 22 || echo "Port test failed"
           
+          echo "Attempting SSH connection..."
+          ssh -vvv -i $HOME/.ssh/id_ed25519 \
+          -o ConnectTimeout=15 \
+          -o BatchMode=yes \
+          ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} \
+          "echo 'Success! Host: $(uname -a)'"
+          
+      # ======================
+      # DEPLOYMENT
+      # ======================
       - name: Deploy
+        timeout-minutes: 3
         run: |
           ssh -i $HOME/.ssh/id_ed25519 \
+          -o StrictHostKeyChecking=yes \
           ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} \
-          "cd ~/repositories/PetyrRolls.git && git fetch && git reset --hard origin/master"
+          "cd ~/repositories/PetyrRolls.git && \
+          git fetch origin && \
+          git reset --hard origin/master && \
+          echo 'Deployed commit: $(git log -1 --pretty=%B)'"
