@@ -85,6 +85,35 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // Initial display
     showItem(0);
+
+
+    // MOBILE SWIPE FEATURE
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    // Attach to the same carousel container
+    carousel.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    }, false);
+
+    carousel.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipeGesture();
+    }, false);
+
+    function handleSwipeGesture() {
+        const swipeDistance = touchEndX - touchStartX;
+
+        if (Math.abs(swipeDistance) > 50) {
+            if (swipeDistance < 0) {
+                // Swiped left
+                showItem(currentIndex + 1);
+            } else {
+                // Swiped right
+                showItem(currentIndex - 1);
+            }
+        }
+    }
 });
 
 
@@ -118,51 +147,51 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// // STORY MODAL
-// document.addEventListener('DOMContentLoaded', function() {
-//     const storyModal = document.getElementById("storyModal");
-//     const storyModalContent = document.getElementById("modalStoryContent");
+// STORY MODAL
+document.addEventListener('DOMContentLoaded', function() {
+    const storyModal = document.getElementById("storyModal");
+    const storyModalContent = document.getElementById("modalStoryContent");
 
-//     if (!storyModal || !storyModalContent) {
-//         return;
-//     }
+    if (!storyModal || !storyModalContent) {
+        return;
+    }
 
-//     document.addEventListener('click', function(e) {
-//         if (e.target.closest('.storyModalTrigger')) {
-//             e.preventDefault();
-//             const trigger = e.target.closest('.storyModalTrigger');
-//             const storyId = trigger.getAttribute('data-story');
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.storyModalTrigger')) {
+            e.preventDefault();
+            const trigger = e.target.closest('.storyModalTrigger');
+            const storyId = trigger.getAttribute('data-story');
 
-//             const storyEl = document.getElementById(storyId);
-//             if (!storyEl) {
-//                 return;
-//             }
+            const storyEl = document.getElementById(storyId);
+            if (!storyEl) {
+                return;
+            }
 
-//             storyModalContent.innerHTML = storyEl.innerHTML;
-//             storyModal.style.display = "block";
-//             document.body.style.overflow = "hidden";
-//         }
+            storyModalContent.innerHTML = storyEl.innerHTML;
+            storyModal.style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
 
-//         // Handle close clicks
-//         if (e.target.classList.contains('storyClose') || e.target === storyModal) {
-//             storyModal.style.display = "none";
-//             document.body.style.overflow = "auto";
-//         }
-//     });
+        // Handle close clicks
+        if (e.target.classList.contains('storyClose') || e.target === storyModal) {
+            storyModal.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+    });
 
-//     // In your modal opening function:
-//     document.querySelectorAll('.storyModalTrigger').forEach(trigger => {
-//         trigger.addEventListener('click', function(e) {
-//             e.preventDefault();
-//             const storyId = this.getAttribute('data-story');
-//             const storyContent = document.getElementById(storyId).innerHTML;
-//             const storyImage = this.querySelector('img').src;
+    // In your modal opening function:
+    document.querySelectorAll('.storyModalTrigger').forEach(trigger => {
+        trigger.addEventListener('click', function(e) {
+            e.preventDefault();
+            const storyId = this.getAttribute('data-story');
+            const storyContent = document.getElementById(storyId).innerHTML;
+            const storyImage = this.querySelector('img').src;
             
-//             document.getElementById('modalStoryContent').innerHTML = storyContent;
-//             document.getElementById('modalStoryImage').src = storyImage;
+            document.getElementById('modalStoryContent').innerHTML = storyContent;
+            document.getElementById('modalStoryImage').src = storyImage;
             
-//             // Show modal
-//             document.getElementById('storyModal').style.display = 'block';
-//         });
-//     });
-// });
+            // Show modal
+            document.getElementById('storyModal').style.display = 'block';
+        });
+    });
+});
