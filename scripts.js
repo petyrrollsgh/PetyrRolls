@@ -103,14 +103,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function handleSwipeGesture() {
         const swipeDistance = touchEndX - touchStartX;
-
+    
         if (Math.abs(swipeDistance) > 35) {
             if (swipeDistance < 0) {
-                // Swiped left
-                showItem(currentIndex + 1);
+                showItem((currentIndex + 1) % totalItems);
             } else {
-                // Swiped right
-                showItem(currentIndex - 1);
+                showItem((currentIndex - 1 + totalItems) % totalItems);
             }
         }
     }
