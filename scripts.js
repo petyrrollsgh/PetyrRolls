@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function handleSwipeGesture() {
         const swipeDistance = touchEndX - touchStartX;
 
-        if (Math.abs(swipeDistance) > 50) {
+        if (Math.abs(swipeDistance) > 35) {
             if (swipeDistance < 0) {
                 // Swiped left
                 showItem(currentIndex + 1);
