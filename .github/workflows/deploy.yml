@@ -1,16 +1,23 @@
-name: SSH Test
+name: Deploy to cPanel
 on: push
 jobs:
-  test:
-    runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-22.04
     steps:
-      - run: |
-          mkdir -p $HOME/test_dir
-          echo "Test file" > $HOME/test_dir/test.txt
-          ls -la $HOME/
+      - uses: actions/checkout@v3
+      
+      - name: Setup SSH
+        run: |
+          mkdir -p $HOME/.ssh
+          echo "${{ secrets.DEPLOY_SSH_KEY }}" > $HOME/.ssh/id_ed25519
+          chmod 600 $HOME/.ssh/id_ed25519
+          echo "ecngx285.inmotionhosting.com ecdsa-sha2-nistp256 AAAAE2VjZH..." >> $HOME/.ssh/known_hosts
+          
+      - name: Test Connection
+        run: ssh -i $HOME/.ssh/id_ed25519 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} "echo 'Connected!'"
           
       - name: Deploy
         run: |
-          ssh -i ~/.ssh/id_ed25519 \
+          ssh -i $HOME/.ssh/id_ed25519 \
           ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} \
-          "cd ~/repositories/PetyrRolls.git && git pull && echo 'Deploy complete'"
+          "cd ~/repositories/PetyrRolls.git && git fetch && git reset --hard origin/master"
