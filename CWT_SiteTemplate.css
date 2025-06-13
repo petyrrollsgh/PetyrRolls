@@ -674,6 +674,10 @@ hr {
 			display: none;
 		}
 
+		.navLinks li a {
+			font-weight: 300;
+		}
+
     .pageContent {
         margin-left: 0;
         padding: 4.25rem 2rem;
