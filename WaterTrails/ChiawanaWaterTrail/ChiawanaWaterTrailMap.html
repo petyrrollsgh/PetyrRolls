@@ -17,7 +17,8 @@
 	</head>
 	<body>
 		<div id="map"></div>
-		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+		<script src="js/qgis2web_expressions.js"></script>
+		<script src="js/leaflet.js"></script>
 		<script src="js/L.Control.Layers.Tree.min.js"></script>
 		<script src="js/leaflet-svg-shape-markers.min.js"></script>
 		<script src="js/leaflet.rotatedMarker.js"></script>
@@ -26,89 +27,15 @@
 		<script src="js/Autolinker.min.js"></script>
 		<script src="js/rbush.min.js"></script>
 		<script src="js/labelgun.min.js"></script>
-		<script src="js/qgis2web_expressions.js"></script>
+		<script src="js/labels.js"></script>
 		<script src="data/Chiawana2Sacagawea_V2_2.js"></script>
 		<script src="data/Selph2Chiawana_V2_3.js"></script>
 		<script src="data/Ringold2Selph_V2_4.js"></script>
 		<script src="data/TaptealWaterTrail_V2_5.js"></script>
-		<script src="js/labels.js"></script>
 		<script src="js/removeEmptyRowsFromPopupContent.js"></script>
 		<script src="js/addClassToPopupIfMedia.js"></script>
-		<script>
 		// The "Main" Script
-			document.addEventListener("DOMContentLoaded", function() {
-				// Initialize Map
-				var map = L.map('map', {
-					zoomControl: false,
-					maxZoom: 20,
-					minZoom: 1
-				}).fitBounds([[45.5,-119.5],[46.9,-119.0]]);
-				
-				// Add hash for URL control
-				var hash = new L.Hash(map);
-				map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
-				
-				// Initialize utilities
-				var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
-				var zoomControl = L.control.zoom({position: 'topleft'}).addTo(map);
-				var bounds_group = new L.featureGroup([]);
-				
-				// Base Layers
-				var baseLayers = {
-					"OpenStreetMap": createOSMLayer(),
-					"Google Satellite": createGoogleSatelliteLayer()
-				};
-				
-				// Overlay Layers
-				var overlays = {
-					"Chiawana2Sacagawea": createChiawanaLayer(),
-					"Selph2Chiawana": createSelphLayer(),
-					"Ringold2Selph": createRingoldLayer(),
-					"TaptealWaterTrail": createTaptealLayer()
-				};
-				
-				// Add layers to map
-				L.control.layers(baseLayers, overlays).addTo(map);
-				
-				// Layer creation functions
-				function createOSMLayer() {
-					var layer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-						maxZoom: 20,
-						minZoom: 1,
-						attribution: ''
-					});
-					layer.addTo(map);
-					return layer;
-				}
-				
-				function createGoogleSatelliteLayer() {
-					return L.tileLayer('https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}', {
-						maxZoom: 20,
-						minZoom: 1,
-						attribution: ''
-					});
-				}
-				
-				function createChiawanaLayer() {
-					// ... (keep your existing Chiawana layer code)
-					return layer_Chiawana2Sacagawea_V2_2;
-				}
-				
-				function createSelphLayer() {
-					// ... (keep your existing Selph layer code)
-					return layer_Selph2Chiawana_V2_3;
-				}
-				
-				function createRingoldLayer() {
-					// ... (keep your existing Ringold layer code)
-					return layer_Ringold2Selph_V2_4;
-				}
-				
-				function createTaptealLayer() {
-					// ... (keep your existing Tapteal layer code)
-					return layer_TaptealWaterTrail_V2_5;
-				}
-			});
+		<script>
 			var map = L.map('map', {zoomControl:false, maxZoom:20, minZoom:1}).fitBounds([[45.5,-119.5],[46.9,-119.0]]);
 			var hash = new L.Hash(map);
 			map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
