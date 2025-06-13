@@ -1,25 +1,13 @@
-name: Deploy to cPanel
+name: SSH Test
 on: push
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      
-      - name: Setup SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts
-          ls -la ~/.ssh
-          cat ~/.ssh/known_hosts
-          
-      - name: Test Connection
-        run: |
-          ssh -vvv -i ~/.ssh/id_ed25519 \
-          ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} \
-          "echo 'Success!'; pwd; ls -la ~/repositories/"
+      - run: |
+          mkdir -p $HOME/test_dir
+          echo "Test file" > $HOME/test_dir/test.txt
+          ls -la $HOME/
           
       - name: Deploy
         run: |
