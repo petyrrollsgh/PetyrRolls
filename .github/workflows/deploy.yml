@@ -31,7 +31,9 @@ jobs:
           -o StrictHostKeyChecking=yes \
           -o ConnectTimeout=15 \
           ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} \
-          "cd ~/repositories/PetyrRolls.git && \
-          git fetch origin && \
-          git reset --hard origin/master && \
-          echo 'Deployed commit: $(git log -1 --pretty=%B)'"
+          "if [ -d ~/public_html/.git ]; then \
+              cd ~/public_html && git pull origin master; \
+           else \
+              git clone https://github.com/AlejCast02/PetyrRolls.git ~/public_html; \
+           fi"
+
