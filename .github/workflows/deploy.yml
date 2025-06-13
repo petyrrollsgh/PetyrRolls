@@ -5,14 +5,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Add SSH Key
+      
+      - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts
+          ls -la ~/.ssh
+          cat ~/.ssh/known_hosts
+          
+      - name: Test Connection
+        run: |
+          ssh -vvv -i ~/.ssh/id_ed25519 \
+          ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} \
+          "echo 'Success!'; pwd; ls -la ~/repositories/"
+          
       - name: Deploy
         run: |
           ssh -i ~/.ssh/id_ed25519 \
           ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} \
-          "cd ~/repositories/PetyrRolls.git && git pull"
+          "cd ~/repositories/PetyrRolls.git && git pull && echo 'Deploy complete'"
