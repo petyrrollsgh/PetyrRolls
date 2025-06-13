@@ -39,7 +39,7 @@ jobs:
       - name: Test Connection
         timeout-minutes: 2
         run: |
-          echo "Testing raw port 22 access..."
+          echo "Testing raw port 2222 access..."
           nc -zv ecngx285.inmotionhosting.com 22 || echo "Port test failed"
           
           echo "Attempting SSH connection..."
