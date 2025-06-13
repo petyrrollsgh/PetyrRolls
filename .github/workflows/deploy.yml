@@ -34,6 +34,7 @@ jobs:
           "if [ -d ~/public_html/.git ]; then \
               cd ~/public_html && git pull origin master; \
            else \
+              rm -rf ~/public_html/* && \
               git clone https://github.com/AlejCast02/PetyrRolls.git ~/public_html; \
            fi"
 
