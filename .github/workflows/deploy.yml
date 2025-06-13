@@ -1,62 +1,39 @@
-name: Deploy to cPanel
-on: 
-  push:
-    branches: [ master ]  # Change to 'main' if needed
-
+name: Deploy to cPanel (Port 2222)
+on: push
 jobs:
   deploy:
     runs-on: ubuntu-22.04
-    timeout-minutes: 5  # Auto-cancel if stuck
+    timeout-minutes: 5
     
     steps:
       - uses: actions/checkout@v3
-      
-      # ======================
-      # DEBUG SECTION
-      # ======================
-      - name: Show Environment
-        run: |
-          echo "Runner OS: $(uname -a)"
-          echo "Home: $HOME"
-          ls -la $HOME/.ssh || echo "No .ssh dir"
-          
+
       # ======================
       # SSH SETUP
-      # ======================      
-      - name: Setup SSH
+      # ======================
+      - name: Configure SSH
         run: |
           mkdir -p $HOME/.ssh
-          chmod 700 $HOME/.ssh
           echo "${{ secrets.DEPLOY_SSH_KEY }}" > $HOME/.ssh/id_ed25519
           chmod 600 $HOME/.ssh/id_ed25519
-          echo "ecngx285.inmotionhosting.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI..." > $HOME/.ssh/known_hosts
-          echo "SSH setup complete:"
-          ls -la $HOME/.ssh/
-          
+          echo "[${{ secrets.DEPLOY_HOST }}]:2222 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI..." > $HOME/.ssh/known_hosts
+
       # ======================
       # CONNECTION TEST
       # ======================
-      - name: Test Connection
-        timeout-minutes: 2
+      - name: Test Port 2222
         run: |
-          echo "Testing raw port 2222 access..."
-          nc -zv ecngx285.inmotionhosting.com 22 || echo "Port test failed"
-          
-          echo "Attempting SSH connection..."
-          ssh -vvv -i $HOME/.ssh/id_ed25519 \
-          -o ConnectTimeout=15 \
-          -o BatchMode=yes \
-          ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} \
-          "echo 'Success! Host: $(uname -a)'"
-          
+          echo "Testing port 2222..."
+          nc -zv ${{ secrets.DEPLOY_HOST }} 2222 && echo "Port test passed!" || echo "Port test failed"
+
       # ======================
       # DEPLOYMENT
       # ======================
-      - name: Deploy
-        timeout-minutes: 3
+      - name: Deploy via SSH (Port 2222)
         run: |
-          ssh -i $HOME/.ssh/id_ed25519 \
+          ssh -p 2222 -i $HOME/.ssh/id_ed25519 \
           -o StrictHostKeyChecking=yes \
+          -o ConnectTimeout=15 \
           ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} \
           "cd ~/repositories/PetyrRolls.git && \
           git fetch origin && \
