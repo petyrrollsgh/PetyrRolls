@@ -1,0 +1,6 @@
+js/*.js filter=lfs diff=lfs merge=lfs -text
+js/*.map filter=lfs diff=lfs merge=lfs -text
+WaterTrails/TaptealWaterTrail/js/*.js filter=lfs diff=lfs merge=lfs -text
+WaterTrails/ChiawanaWaterTrail/js/*.js filter=lfs diff=lfs merge=lfs -text
+WaterTrails/TaptealWaterTrail/js/*.map filter=lfs diff=lfs merge=lfs -text
+WaterTrails/ChiawanaWaterTrail/js/*.map filter=lfs diff=lfs merge=lfs -text
