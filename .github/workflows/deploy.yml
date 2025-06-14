@@ -6,37 +6,21 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-22.04
-    timeout-minutes: 5
+    timeout-minutes: 10
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository with LFS
+        uses: actions/checkout@v3
+        with:
+          lfs: true
 
-      # ======================
-      # SSH SETUP (PORT 2222)
-      # ======================
-      - name: Configure SSH
+      - name: Setup SSH key
         run: |
-          mkdir -p $HOME/.ssh
-          echo "${{ secrets.DEPLOY_SSH_KEY }}" > $HOME/.ssh/id_ed25519
-          chmod 600 $HOME/.ssh/id_ed25519
-          
-          # Get host key for port 2222
-          ssh-keyscan -p 2222 ${{ secrets.DEPLOY_HOST }} > $HOME/.ssh/known_hosts
-          echo "Host key for port 2222:"
-          cat $HOME/.ssh/known_hosts
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -p 2222 ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts
 
-      # ======================
-      # DEPLOYMENT
-      # ======================
-      - name: Deploy via SSH with Git LFS Support
+      - name: Deploy via SCP
         run: |
-          ssh -p 2222 -i $HOME/.ssh/id_ed25519 \
-          -o StrictHostKeyChecking=yes \
-          -o ConnectTimeout=15 \
-          ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} << 'EOF'
-            rm -rf ~/public_html
-            git clone --depth=1 git@github.com:AlejCast02/PetyrRolls.git ~/public_html
-            cd ~/public_html
-            git lfs install
-            git lfs pull
-EOF
+          scp -P 2222 -r ./* ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:public_html
