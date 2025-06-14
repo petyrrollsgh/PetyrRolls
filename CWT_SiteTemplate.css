@@ -684,6 +684,9 @@ hr {
 		justify-content: center;
 		align-items: center;
     }
+		.pageContent p, .pageContent h3 {
+			padding: 0 calc(2.75vw + 1rem) !important;
+		}
 
     .overlay {
 		display: none;
