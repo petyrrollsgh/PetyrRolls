@@ -1,3 +1,68 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c1a93d554254ac1e6c7a9afafa247a66177fd3ab689ebd192a8b961a80cbcb6d
-size 2366
+var json_Selph2Chiawana_V2_3 = {
+	"type":"FeatureCollection",
+	"name":"Selph2Chiawana_V2_3",
+	"crs":{"type":"name",
+	"properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},
+	"features":[
+		{"type":"Feature",
+		"properties":{
+			"id":"11",
+			"Name":"Selph Landing",
+			"Desc":"Gravel Launch with easy Kayak Access",
+			"ExternLink":null,
+			"PublicLink":null,
+			"SOSLink":"HTMLdocs\\CWT_SiteTemplate.html",
+			"PhotoPath":"Images\\ScottsIsland.jpg"},
+		"geometry":{"type":"Point","coordinates":[-119.249088738551436,46.32120383314841]}},
+		{"type":"Feature",
+		"properties":{
+			"id":"2",
+			"Name":"Chiawana",
+			"Desc":"Chiawana East End Beach",
+			"ExternLink":null,
+			"PublicLink":null,
+			"SOSLink":"HTMLdocs\\CWT_SiteTemplate.html",
+			"PhotoPath":"Images\\ScottsIsland.jpg"},
+		"geometry":{"type":"Point","coordinates":[-119.207968766258944,46.244317013994532]}},
+		{"type":"Feature",
+		"properties":{
+			"id":"3",
+			"Name":"Chiawana West",
+			"Desc":"Dock and Rough Shoreline on West End of Chiawana Park.",
+			"ExternLink":null,
+			"PublicLink":null,
+			"SOSLink":"HTMLdocs\\CWT_SiteTemplate.html",
+			"PhotoPath":"Images\\ScottsIsland.jpg"},
+		"geometry":{"type":"Point","coordinates":[-119.216810640893414,46.247723810389687]}},
+		{"type":"Feature",
+		"properties":{
+			"id":"4",
+			"Name":"Richland Bend Habitat Unit",
+			"Desc":"Primary wetlands of the habitat unit",
+			"ExternLink":null,
+			"PublicLink":null,
+			"SOSLink":"HTMLdocs\\CWT_SiteTemplate.html",
+			"PhotoPath":"Images\\ScottsIsland.jpg"},
+		"geometry":{"type":"Point","coordinates":[-119.257529752911395,46.272130438162776]}},
+		{"type":"Feature",
+		"properties":{
+			"id":"4",
+			"Name":"Richland Bend Habitat Unit",
+			"Desc":"Rough and Brushy Landing but Public Access Allowed",
+			"ExternLink":null,
+			"PublicLink":null,
+			"SOSLink":"HTMLdocs\\CWT_SiteTemplate.html",
+			"PhotoPath":"Images\\ScottsIsland.jpg"},
+		"geometry":{"type":"Point","coordinates":[-119.263045452002501,46.279255873584013]}},
+		{"type":"Feature",
+		"properties":{
+			"id":"5",
+			"Name":"Burns Dock and Pump Station",
+			"Desc":"U.S. Army Corp land but Public Access Status Needs to be Resolved",
+			"ExternLink":null,
+			"PublicLink":null,
+			"SOSLink":null,
+			"PhotoPath":"Images\\ScottsIsland.jpg"},
+		"geometry":{"type":"Point","coordinates":[-119.263172209597343,46.285459237656738]}}
+	]
+}
