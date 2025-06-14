@@ -1,10 +1,13 @@
 name: Deploy to cPanel (Port 2222)
-on: push
+
+on:
+  push
+
 jobs:
   deploy:
     runs-on: ubuntu-22.04
     timeout-minutes: 5
-    
+
     steps:
       - uses: actions/checkout@v3
 
@@ -25,11 +28,14 @@ jobs:
       # ======================
       # DEPLOYMENT
       # ======================
-      - name: Deploy via SSH
+      - name: Deploy via SSH with Git LFS Support
         run: |
           ssh -p 2222 -i $HOME/.ssh/id_ed25519 \
           -o StrictHostKeyChecking=yes \
           -o ConnectTimeout=15 \
-          ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} \
-          "rm -rf ~/public_html && \
-           git clone https://github.com/AlejCast02/PetyrRolls.git ~/public_html"
+          ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} << 'EOF'
+            rm -rf ~/public_html
+            git clone --depth=1 git@github.com:AlejCast02/PetyrRolls.git ~/public_html
+            cd ~/public_html
+            git lfs install
+            git lfs pull
