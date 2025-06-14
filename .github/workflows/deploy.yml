@@ -39,3 +39,4 @@ jobs:
             cd ~/public_html
             git lfs install
             git lfs pull
+EOF
