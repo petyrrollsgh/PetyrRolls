@@ -1,0 +1,450 @@
+[33mcommit 5b28cde84fbbc11cb43dc619d53db764a146df22[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mChiawanaWaterTrailUpdate[m[33m)[m
+Author: Petyr <petyr_jk@charter.net>
+Date:   Mon Jun 23 19:23:13 2025 -0700
+
+    Images for Sacagawea and Schlegel Added
+
+[33mcommit 06aeab1cf8454730f08264175620457db251426f[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Sat Jun 14 15:47:48 2025 -0700
+
+    Adjust text padding for mobile screen sizes.
+
+[33mcommit 176a2c4b459c89217bb4b32e2fe9db6104c7c005[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Sat Jun 14 15:38:32 2025 -0700
+
+    Track all WaterTrails subfolder files with LFS and re-add
+
+[33mcommit 5a1dc3ea681f14ec838701f4aab3cbe46d8ae7ce[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Sat Jun 14 15:32:45 2025 -0700
+
+    Track all WaterTrails subfolder files with LFS and re-add
+
+[33mcommit 91c14289e6f2d8bd019837af7742e1cbfbf2c4b4[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Sat Jun 14 15:15:03 2025 -0700
+
+    Update TaptealWaterTrailMap.html and track JS files with LFS
+
+[33mcommit f88e983198bd869ef2c4800aa07a1fd4aa2a8cbc[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Sat Jun 14 15:14:04 2025 -0700
+
+    Track JS/map files with LFS and re-add them
+
+[33mcommit ba17e0872fd003bf8a9f540153ca770ea72faa66[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Sat Jun 14 15:08:31 2025 -0700
+
+    Update deploy.yml
+
+[33mcommit ac4ece2c036cfba9c2f6e19d12dfd401cc17589e[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Sat Jun 14 15:06:28 2025 -0700
+
+    Update deploy.yml
+
+[33mcommit 349ed882e36000bdb432d77845385367672358ed[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Sat Jun 14 15:05:08 2025 -0700
+
+    Update deploy.yml to track LFS files
+
+[33mcommit 1c4f7c9ddfe952950ced5076fb8a5b486c16a4c6[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 12:22:45 2025 -0700
+
+    Fix ineractive map bug that prevents it from loading.
+
+[33mcommit c09324e7bf05ff1efaef7585d2a1d6921b9c707b[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 12:22:11 2025 -0700
+
+    Fix ineractive map bug that prevents it from loading.
+
+[33mcommit a3913fb8427893ec1e3485690c1d55e9d87d4417[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 12:12:50 2025 -0700
+
+    Fix swipe effect for image carousel.
+
+[33mcommit 50b2703528a907f1fc2d7855abba72b5208afcce[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 12:08:24 2025 -0700
+
+    Fix swipe effect for image carousel.
+
+[33mcommit be923fb7e9d7d9f82c0e42d1f04e6e124e4a9f67[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 12:00:24 2025 -0700
+
+    Add favicon to website.
+
+[33mcommit 6c0f7d4edbd7e239956821acaeba7c0cbd0f8f13[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 11:49:54 2025 -0700
+
+    Restore original map files.
+
+[33mcommit a14bd387327fb417fc4d323eff5115d1ac39d6d6[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 11:47:19 2025 -0700
+
+    Restore original map files.
+
+[33mcommit b4906505da82b29489c0bc42824294b5b7bf6269[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 11:45:54 2025 -0700
+
+    Restore original map files.
+
+[33mcommit 0fea40fa6f8d77b837a88299358a13d5f9d99a91[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 11:43:46 2025 -0700
+
+    Restore original map files.
+
+[33mcommit f01c6a886b8e7dbed628af6c908056c46f71b482[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 11:18:08 2025 -0700
+
+    Fix minor syntax error in water trail maps.
+
+[33mcommit 389dca4f6afbada9aa1a0d3756e4687ff77df293[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 11:07:20 2025 -0700
+
+    Fix minor syntax error in water trail maps.
+
+[33mcommit b8aa4a56e663903c00b1c52057fa2e86a3d1e506[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 10:46:29 2025 -0700
+
+    Fix minor syntax error in water trail maps.
+
+[33mcommit b13a0f14023c05b8e71734d5516e3ff497f7d014[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 10:35:01 2025 -0700
+
+    Add swip feature for mobile users to scroll in carousel, as well as bug fixes.
+
+[33mcommit 5e626d70192ef6b334b169a54bbf011292d8f7a1[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 10:21:30 2025 -0700
+
+    Short story file path fix.
+
+[33mcommit 4a6aa366134bcae1b4e83e7d6f98ed951875f8ee[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 10:19:42 2025 -0700
+
+    Test working workflow
+
+[33mcommit 110e8f432be691fdac0fe824d29f853c34afeef3[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Fri Jun 13 10:16:15 2025 -0700
+
+    Update deploy.yml
+
+[33mcommit 267fb5a12e851ffd6c2f26b543a0c5cefa8f79f1[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Fri Jun 13 10:14:59 2025 -0700
+
+    Update deploy.yml
+
+[33mcommit 85b34d8d1744e9ab8ccf7b61dddc13386bb259c8[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Fri Jun 13 10:13:04 2025 -0700
+
+    Update deploy.yml
+
+[33mcommit 3180d135c8f4dfb2367298ed135443c9539ab365[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Fri Jun 13 10:09:13 2025 -0700
+
+    Update deploy.yml
+
+[33mcommit 6cd34fa2045c17fbe0c9bf5f44a5d838ab0331b9[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Fri Jun 13 10:08:29 2025 -0700
+
+    Update deploy.yml
+
+[33mcommit 08412f1da36247b5b8b5c88667e77c4240ff5590[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Fri Jun 13 10:00:41 2025 -0700
+
+    Update deploy.yml
+
+[33mcommit cd0f0222419de000466b7fb5418f534f7a086db3[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Fri Jun 13 09:56:56 2025 -0700
+
+    Update deploy.yml
+
+[33mcommit 5a6e2f5ffe1882647ccd3ca4a2fb7ae1b92545d9[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Fri Jun 13 09:52:05 2025 -0700
+
+    Update deploy.yml
+
+[33mcommit bb7d410408eff0f4f88e2edf074a050e2bd1d846[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Fri Jun 13 09:42:35 2025 -0700
+
+    Update deploy.yml
+
+[33mcommit e59ec5505382715611f9207a730c35403b59ab52[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 09:35:00 2025 -0700
+
+    Restart workflows
+
+[33mcommit 7924340f5474fa670473c91f1963241463d4097a[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 09:27:00 2025 -0700
+
+    Test working workflow
+
+[33mcommit 9fe4a5902700f872168c8a126b4dbc091e13c9e8[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Fri Jun 13 09:26:34 2025 -0700
+
+    Update deploy.yml
+
+[33mcommit 76eaec5eff6768fe2255a7dcae3a67a7cc448567[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Fri Jun 13 09:22:27 2025 -0700
+
+    Update deploy.yml
+
+[33mcommit c7d26e02d8e402057658ced7c461b7bcf0b94e94[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Fri Jun 13 09:21:41 2025 -0700
+
+    Update deploy.yml
+
+[33mcommit d8b77b3e51546b42e443fd5623663e38ad25b6b5[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 09:19:30 2025 -0700
+
+    Test webhook
+
+[33mcommit 02a4857e2b5c8121b65c9a9304e08ad986843c81[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Fri Jun 13 09:13:52 2025 -0700
+
+    Update deploy.yml
+
+[33mcommit d164762a5307e5000e30ae9b05be7c72d92c7a32[m
+Author: Alejandro Castaneda <144173111+AlejCast02@users.noreply.github.com>
+Date:   Fri Jun 13 09:09:09 2025 -0700
+
+    Create deploy.yml
+
+[33mcommit 3cf743a425aa7c76299322a0b47623b6860eaf23[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 08:53:40 2025 -0700
+
+    Test webhook
+
+[33mcommit efe0652709210af6c55ab53068cbda7c40ec2b50[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 08:50:50 2025 -0700
+
+    Test webhook
+
+[33mcommit 92b52163624b7be36cba542b13aef15666dc44c3[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 08:49:46 2025 -0700
+
+    Test webhook
+
+[33mcommit 0a7fd6fd05d27254e62192fac24f608178bd47c4[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 08:47:31 2025 -0700
+
+    Test webhook
+
+[33mcommit aa937f38d854eab4de397b603e714ec08167ec1d[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 08:09:01 2025 -0700
+
+    Test auto-deploy
+
+[33mcommit 28d8fd95b6489ecebe5ddfe508ebaef9773e02de[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 07:50:08 2025 -0700
+
+    Short story file path fix.
+
+[33mcommit c2dfdb368dc2bd19cafc928749bd44dc086b5c4f[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 07:36:02 2025 -0700
+
+    Test deployment
+
+[33mcommit 3eb618e453932178e3bdd27554a8b1d20393b84f[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 07:33:45 2025 -0700
+
+    Test deployment
+
+[33mcommit 620bb787ed5de476d65de15d5c95def79179eaa1[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 07:29:37 2025 -0700
+
+    Test deployment
+
+[33mcommit f977a4908710f01b35540eaa5caf1c6e6ce78fdd[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Fri Jun 13 07:24:20 2025 -0700
+
+    Test deployment
+
+[33mcommit 9e7782141b37f2fb9cae58b4007173aefb5c4f0b[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Thu Jun 12 23:47:08 2025 -0700
+
+    Change file path for short stories to work properly.
+
+[33mcommit 4b8dfa4c2952a8ac9777d9dac6cb76a24366c0cb[m
+Merge: ac2cea2 4ea8eb3
+Author: Alejandro Castaneda <alejandro.castaneda@wsu.edu>
+Date:   Thu Jun 12 18:53:51 2025 -0400
+
+    Resolve merge conflict by deleting .gitattributes
+
+[33mcommit ac2cea24e19477ba0439c0e55f16550a9905625a[m
+Author: Alejandro Castaneda <alejandro.castaneda@wsu.edu>
+Date:   Thu Jun 12 18:51:48 2025 -0400
+
+    Fix LFS tracking and update scripts.js
+
+[33mcommit 4ea8eb311724aa55ca889bbbdce6dd53fe5c207e[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Thu Jun 12 15:13:59 2025 -0700
+
+    Alter .cpanel.yml file for additional website security.
+
+[33mcommit 7283cdd740aea2aa0e9c586b6e6c48f1c4b162bd[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Thu Jun 12 15:10:28 2025 -0700
+
+    Remote git attributes.
+
+[33mcommit 5051300751393d46a03bb0e76b614a0989c6472f[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Thu Jun 12 14:46:04 2025 -0700
+
+    Add new JS file with index JS references reformatted.
+
+[33mcommit 6b3e6deee6ba98a19bdf7a814984f14bb2c9c2f8[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Thu Jun 12 14:44:01 2025 -0700
+
+    Delete LFS js file.
+
+[33mcommit 9f8ef391017864911ee4885558873c8057d3f4d3[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Thu Jun 12 14:40:37 2025 -0700
+
+    Remove scripts.js from LFS and .gitattributes
+
+[33mcommit fc6b1a90db370d8515131d9e331eab3d6b9f83e0[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Thu Jun 12 14:36:20 2025 -0700
+
+    Add standard JS non-LFS file.
+
+[33mcommit b51c980963e223c4bc98c9f3b10738bfd45c4adf[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Thu Jun 12 14:33:51 2025 -0700
+
+    Delete LFS js file.
+
+[33mcommit 7064b552ee1d41267a760ce73ae1395374b03c34[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Thu Jun 12 14:26:45 2025 -0700
+
+    Fix: Remove scripts.js from Git LFS and re-add as regular file
+
+[33mcommit b2f778007c517d31b34d7fe41663de5102356bfa[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Thu Jun 12 12:27:12 2025 -0700
+
+    JS load error fix.
+
+[33mcommit c40034719be89640f096f04ab18cd17539b0e561[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Wed Jun 11 16:00:09 2025 -0700
+
+    Reformat short stories to be their own individual pages.
+
+[33mcommit b85110b10f3c3409ad10db33782a0cd0223f065f[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Mon Jun 9 23:22:07 2025 -0700
+
+    Visual adjustments to carousel images.
+
+[33mcommit 5cf350f69e7dca56c29c01ccda7894d1d7308b0b[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Mon Jun 9 17:24:27 2025 -0700
+
+    Add cPanel deployment configuration
+
+[33mcommit f05d6ff706a910e36bb2d4fe8b24f983efb45e79[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Mon Jun 9 17:02:43 2025 -0700
+
+    Add cPanel deployment configuration
+
+[33mcommit 5766ea69ae03888f17d760691fb8940740939b20[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Mon Jun 9 03:06:20 2025 -0700
+
+    Minor changes to index content and information organzing.
+
+[33mcommit 1fad72021a45b23522c1fe63050280f5c3ceb5f8[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Mon Jun 9 01:39:21 2025 -0700
+
+    Fix short story modal aspect ratios.
+
+[33mcommit b2ef23131bb3cc90c84b73b3042d746fa0ea6e44[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Mon Jun 9 01:05:08 2025 -0700
+
+    Fix story modal bounds.
+
+[33mcommit 87e55dc535f8c8eb4115ba694c4143b1558e96d4[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Sun Jun 8 23:52:56 2025 -0700
+
+    Complete map image scroll functionality
+
+[33mcommit 6a2d41e7dacc88206f913cb6b18e92e93153efdd[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Sun Jun 1 18:35:26 2025 -0700
+
+    Minor visual changes for navigation hover indicator.
+
+[33mcommit 263598872dbf1926c61f2cd57b97877526f53aa5[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Thu May 22 17:10:52 2025 -0700
+
+    Attemped nav scroll fix for large image quantity.
+
+[33mcommit c35ab8a07931ce93c93f062760f00d600b332b15[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Thu May 22 16:56:26 2025 -0700
+
+    Modify Public Links to display images on side navbar.
+
+[33mcommit 8824baf7fd223f82eabc30193d34a58de8041063[m
+Author: alejandrocastaneda <alejandro.castaneda@wsu.edu>
+Date:   Tue May 20 19:01:46 2025 -0700
+
+    Clean reset with LFS-tracked files
