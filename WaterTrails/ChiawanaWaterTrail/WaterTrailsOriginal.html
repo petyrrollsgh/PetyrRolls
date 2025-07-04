@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CWT_Intro</title>
+	<link rel="stylesheet" href="../CWT_SiteTemplate.css">
+	<style>
+
+	</style>
+<!-- 1920x1080 -->
+
+</head>
+
+<body>
+	<header>
+		<p id="SiteTitleID">Chiawana & Tapteal Water Trails</p>
+	</header>
+	<!-- <nav>nav</nav> -->
+	
+	<div class="CWTsiteDets">	
+		<aside style="flex-grow: 1; 
+			background-color: green;
+			border: 5px solid red;">
+			<p><a href="CWTindex.html">Link to Water Trails</a></p>
+			<p><a href="HTMLdocs\WAR_Description.html">Link to Water Access Rating Description</a></p>
+			<p>Click to Enlarge Photo</p>
+			<img class="mySlides" id="myImg1" src="images\DavisLake.jpg"    alt="Davis Lake Image"    >
+			<img class="mySlides" id="myImg2" src="images\ScottsIsland.jpg" alt="Scotts Island Image" >
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
+			<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var img1 = document.getElementById("myImg1");
+				var img2 = document.getElementById("myImg2");
+				const collection = document.getElementsByClassName("mySlides");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				img1.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+				}
+				img2.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+				}
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+					modal.style.display = "none";
+				}
+			</script>
+		</aside>
+		<article id="SiteArticle" style="flex-grow: 1; border: 5px solid red;"> 
+			<h3>Click Link to Left to go directly to the maps</h3>
+			<h1>Overview</h1>
+			<<p style="font-size: 20px;">Welcome to the introductory page for the Chiawana and Tapteal Water Trails.  Eventually you will find here information for paddling adventures in the mid-Columbia basin with a focus on novice paddlers who need information on local paddling groups and clubs, where to rent or buy equipment, where to get lesson as well as suggested safe paddling areas and trips and how to manage car shuttles for longer one-way trips.  Many people ask if it is safe to go out on the Columbia in a small craft.  Damn tootin’ it is.  But some directions on exactly where to go, the basic equipment needed and how to avoid the motorized traffic is essential.  You will eventually find that information on this page as we move from an introductory developing website to a modestly functional paddling guide.  <br><br>
+			
+			But right now the objective is to test the actual web map and get feedback on the user experience.  The map is a very large agglomeration of photos and documentation about each site along the Yakima and Columbia rivers.  It is currently split into 4 sections: 1) the Tapteal Water Trail, The Ringold to Selph Landing paddle, the Selph to Chiawana paddle and the Chiawana to Sacagawea Paddle.  The Tapteal Water Trail is nearly complete and has descriptive text and photos for most sites.  A few sites need additional photos.  Thanks to Dirk for most of the Tapteal photos.  If you have photos you would like to include please forward these to me. The Ringold to Selph paddle is modestly complete and has photos taken by Josh Short and Marla Marvin and trip notes taken by Marla.  I am now working on text to describe each site.<br><br>
+			
+			To get a feel for how the map works:<br>
+			1)	Click on the link to the left labeled “Water Trail Maps – This will take you to a map of the mid-Columbia region.<br>
+			2)	Zoom in on the area of interest and I recommend focusing on the Tapteal Water Way.<br>
+			3)	Click on a point and you should see a pop-up with a site title, a brief description, a public link, an SOS link, and external link and a photo of the site.  Some of these items may be missing if no information is currently available.  The public link has a link to a more lengthy description of each site.  I have added the new Water Access Rating (WAR)system which gives persons with disabilities some idea of the difficulty of getting to and from the shoreline .  Click on the link to the left to get a description of the WAR system.  The SOS link is currently Marla’s report but is ultimately intended as a link to management documents on what SOS and/or Tapteal might want to do with that site.  That would not generally be available to the public.  There is also an external link that brings up a link, for example, a WDFW site that describes Ringold Landing  Finally you will see a photo that is supposed to be representative of the site.<br>
+			4)	Click on the PublicLink and you should see a new page come-up that contain text describing the site.  Your will also see along the left edge a series of photos.  Click on these to expand to a large popup view.  The photos were taken by Dirk, Josh and Marla.  I believe that employing a professional photographer would greatly enhance the user experience with no disrespect to Dirk, Josh and Marla.<br>
+			5)	You can return to the main map and explore other areas but you will find that most of the information is minimal or completely lacking.<br><br>  
+			
+			GIS mapping is a tool that land-use managers employ to communicate information and I have tried to master that capability.  I believe it will be invaluable as a way for local environmentally focused organizations to communicate with local, state and national governmental organizations.  As I noted, RCO specifically promotes the use of GIS mapping as part of the proposal process as well as the end product.  We can supply our audience with basic data or “shape” files for those who have expertise in GIS mapping as well as produce an interactive web-map that any user can navigate and appreciate.   SOS will, for example, be providing WDFW with a more complete version of the sites on the “Left” bank of the Columbia to which is attached a brief explanatory need.<br><br>
+			
+			I’m offering that capability to the rest of the community but the maps only come alive with good photos and useful content.  The beauty of the is approach is that it is interactive.  People pay attention and read the material.  Of course more formal documents may also be required in many instances but for building interest and prioritizing our needs the maps are an invaluable resource.<br><br>
+			
+			There is a lot more we can do with such a site.  It could include all the Badger Mountain hiking trails, mountain bike trails, and many other points of interest. It can be a central link to various outdoor organizations as well as local retail and guide services.   It can also be a central hub for environmental education on regional geology, birding opportunities, riparian habitat or toxic algae.  And in this day and age links to social media accounts and hopefully reflect actual user experiences.<br><br>
+
+			The Mid-Columbia represents one to the nations bests flatwater paddling experiences in the nation.  With relatively pristine waters from the free flowing Hanford Reach to the Twin Sisters there is a paddling opportunity for visitors of all ages and experience levels.</p>
+
+
+
+
+		</article>
+		<!-- End of Article -->
+	</div>
+	
+	<!-- <aside>aside</aside> -->
+	<footer>
+		<p Contact me at:<br>
+		petyr underscore rieke at gmail dot com</p>
+	</footer>
+</body>
