@@ -1,0 +1,4 @@
+---
+deployment:
+  tasks:
+    - /bin/rsync -a --exclude='.git' --exclude='.cpanel.yml' ./ /home/petyrr5/public_html/
