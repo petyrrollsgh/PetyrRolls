@@ -183,10 +183,10 @@ hr {
 	position: relative;
 	display: inline-block;
 	text-align: right;
-    padding: 1rem 1.5rem;
+    padding: 2vh 1.5rem;
 	padding-right: calc(1vw + 1.75rem);
 	padding-bottom: 8px;
-	margin-bottom: 5px;
+	margin-bottom: 1vh;
     text-decoration: none;
     transition: background-color 0.3s;
 }
@@ -729,6 +729,29 @@ hr {
 
 	.storyHeaderImage img {
 		min-width: 50vw !important;
+	}
+}
+
+@media only screen and (max-height: 475px) {
+	.navLinks li:not(.footer) > a {
+		padding: 1vh 2.25rem;
+	}
+	
+	/* UNDERLINE NAV LINKS */
+	.navLinks li a::after {
+		left: calc(52% - .6vw);
+		max-width: calc(100% - 3rem);
+	}
+
+	.navCard {
+		min-width: 14rem;
+		max-width: 12.5rem;
+	}
+	
+	.navCard img {
+		width:100% !important;
+		min-height:35vh !important;
+		border-radius:4px 4px 0 0 !important;
 	}
 }
 
