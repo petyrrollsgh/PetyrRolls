@@ -775,8 +775,8 @@ hr {
 	/* UNDERLINE NAV LINKS */
 	.navLinks li a::after {
 		left: calc(52% - .6vw);
-		max-width: calc(100% - 3.2rem);
-		transform: translateX(-50%);
+		max-width: calc(100% - 2.4rem);
+		transform: translateX(-52.6%);
 	}
 
 	/* NAV CARDS */
