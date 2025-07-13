@@ -36,7 +36,7 @@ h2 {
 	font-family: 'Bodoni Moda';
 	line-height: calc(2.2vw + 28px);
 	font-size: calc(2.75vw + 1.75rem);
-	padding-right: calc(.44vw + .6rem);
+	padding-right: calc(.44vw + .4rem);
 }
 
 	h2.logoAdjustment {
@@ -46,6 +46,32 @@ h2 {
 h3 {
 	font-size: calc(.44vw + 12px);
 }
+
+.navLinksContainer {
+	height: calc(63% - 5rem);
+	margin-right: 9px;
+	overflow-y: auto;
+	z-index: 2;
+}
+
+	.navLinksContainer::-webkit-scrollbar {
+		width: 5px;
+	}
+
+	.navLinksContainer::-webkit-scrollbar-track {
+		background-color: rgb(73, 82, 94)
+	}
+
+	.navLinksContainer::-webkit-scrollbar-thumb {
+		background-color: #85878a;
+		border-radius: 4px;
+		border: 2px solid #85878a;
+	}
+
+	.navLinksContainer::-webkit-scrollbar-thumb:hover {
+		background-color: #85878a;
+	}
+
 
 p, .navLinks li a {
 	font-size: calc(.51vw + 11px);
@@ -152,6 +178,7 @@ hr {
 					rgba(46, 64, 86, 0.8) 50%,
 					rgba(253, 246, 237, 1) 100%);
 		pointer-events: none;
+		z-index: 1;
 	}
 
 .navHeader {
@@ -171,6 +198,7 @@ hr {
 
 	.navImages {
 		max-width: calc(10.5vw + 8rem);
+		height: calc(.5rem + 45vh);
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -184,7 +212,7 @@ hr {
 	display: inline-block;
 	text-align: right;
     padding: 2vh 1.5rem;
-	padding-right: calc(1vw + 1.75rem);
+	padding-right: calc(1vw + 1.1rem);
 	padding-bottom: 8px;
 	margin-bottom: 1vh;
     text-decoration: none;
@@ -201,8 +229,8 @@ hr {
 		height: 2px;
 		background-color: #EFC11A;
 		transition: all 0.4s ease;
-		transform: translateX(-50%);
-		max-width: calc(100% - 3.5rem);
+		transform: translateX(-46.5%);
+		max-width: calc(100% - 3.6rem);
 	}
 
 	.navLinks li a:hover::after {
@@ -223,6 +251,7 @@ hr {
 	bottom: 0;
 } 
 
+	.footer h3 { padding-right: .75rem }
 	.footer p {
 		font-size: calc(.40vw + 10px);
 		font-family: 'Lato', sans-serif;
@@ -230,6 +259,7 @@ hr {
 		display: inline-block;
 		font-weight: 200;
 		text-indent: 0px;
+		padding-right: .75rem;
 		padding-top: .5rem;
 		padding-bottom: 5px;
 		text-align: right;
@@ -240,7 +270,7 @@ hr {
 			content: '';
 			position: absolute;
 			bottom: 0;
-			left: 50%;
+			left: 46%;
 			width: 0;
 			height: 2px;
 			background-color: #EFC11A;
@@ -309,15 +339,16 @@ hr {
 	max-width:400px;
 }
 
-.mapImages {
-	flex-wrap: wrap;
-	max-width: calc(2.5vw + 5rem);
-	height: auto;
+
+.mapImageContainer{
+	width: calc(11.5vw + 8.5rem);
+	height: 60vh;
 }
 
-	.mapImageContainer{
-		width: calc(11.5vw + 8.5rem);
-		height: 60vh;
+	.mapImages {
+		flex-wrap: wrap;
+		max-width: calc(2.5vw + 5rem);
+		height: auto;
 	}
 
 
@@ -678,6 +709,9 @@ hr {
 		.navLinks li a {
 			font-weight: 300;
 		}
+		
+	.footer h3 { margin-right: -15px; }
+	.footer p { margin-right: -15px; }
 
     .pageContent {
         margin-left: 0;
@@ -734,26 +768,37 @@ hr {
 
 @media only screen and (max-height: 475px) {
 	.navLinks li:not(.footer) > a {
-		padding: .5vh 1rem;
-		padding-right: 1.9rem;
+		padding: 1.2vh 1rem;
+		padding-right: 1.7rem;
 	}
 	
 	/* UNDERLINE NAV LINKS */
 	.navLinks li a::after {
 		left: calc(52% - .6vw);
-		max-width: calc(100% - 3rem);
+		max-width: calc(100% - 3.2rem);
+		transform: translateX(-50%);
 	}
 
+	/* NAV CARDS */
 	.navCard {
 		min-width: 14rem;
 		max-width: 12.5rem;
 	}
+		.navCard img {
+			width:100% !important;
+			min-height:35vh !important;
+			border-radius:4px 4px 0 0 !important;
+		}
 	
-	.navCard img {
-		width:100% !important;
-		min-height:35vh !important;
-		border-radius:4px 4px 0 0 !important;
+	/* SIDE NAV STYLES */
+	.navLinksContainer {
+		height: 42vh;
 	}
+
+	.navImages {
+		height: 40vh;
+	}
+
 }
 
 @supports (-ms-ime-align:auto) {
