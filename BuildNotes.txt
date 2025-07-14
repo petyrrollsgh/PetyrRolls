@@ -1,0 +1,131 @@
+9:09 AM 7/10/2025
+Working on the nav bar scroll bars. not making any progress
+/PetyrRolls/GeolHydroEcol/GeologyMap_qgis2web/layers/ColumbiaRiverBasin_3.js
+
+
+1:42 PM 7/9/2025
+Working on GeolHydroEcol_index to change to modal format.  Not that each has a css marker such as data-story="splitRail" which is not apparently relevant or used.  Succesfully converted to modal.  Both the Hydrology and WRSS Zones need editing.  I have a descriptionof the WRSS zones somewhere near ready to go 
+
+
+1:39 AM 7/9/2025
+Have the non webtrail sections sorted out althgout the geolhydroecol section needs to have the riparian habitat section in as a modal.  it will have a map and a pdf describing each area which is still in draft but nearly complete.
+
+So lets see if we can get the water trails working with all the new data added for the chiawana trail.
+
+C:\Users\petyr\OneDrive\Desktop\PetyrRollsAll\AlexGitHub\PetyrRolls-Backup\WaterTrails
+has working copies of the water trail mapps but without the newly added data.  The tapteal should be good however. in the chiawana files we need to updatate 
+
+"~PetyrRolls_7-7-25\WaterTrails\ChiawanaWaterTrail\data\TaptealWaterTrail_V2_5.js"
+"~PetyrRolls_7-7-25\WaterTrails\ChiawanaWaterTrail\data\Chiawana2Sacagawea_V2_2.js"
+"~PetyrRolls_7-7-25\WaterTrails\ChiawanaWaterTrail\data\Ringold2Selph_V2_4.js"
+"~PetyrRolls_7-7-25\WaterTrails\ChiawanaWaterTrail\data\Selph2Chiawana_V2_3.js"
+
+"~PetyrRolls_7-7-25\WaterTrails\ChiawanaWaterTrail\HTMLdocs"
+
+much of the revised data was in 
+"C:\Users\petyr\OneDrive\Desktop\PetyrRollsAll\AlexGitHub\Files" and this was all copied to PetyrRolls_7-7-25 version.
+
+In summary we have reconstructed the website on a local repository.  We need to got through this an look for very large files that might need LFS.  We aslo need to fix the navigation bar so the content can be expanded and it doe not overwrite the contact information.  We also need to get the rehabilitation data section reformated as a modal and get the description pdf inserted.
+
+We also need a section for the WAR description.
+
+These files are all over 1Meg in size and I believe that was the cutoff for uploading to GitHub.
+PetyrRolls_7-7-25\GeolHydroEcol\GeoSurfMap_03-18-25\data\CountyBoundaries_1.js"	>13Meg
+PetyrRolls_7-7-25\GeolHydroEcol\GeoSurfMap_03-18-25\data\ClipDissDissMapUnitPolys_V2_0.js" >2Meg
+PetyrRolls_7-7-25\GeolHydroEcol\FranklinPascoConservationSitesMap\data\Hydro_ROW_Areas_1.js" >8Meg
+PetyrRolls_7-7-25\GeolHydroEcol\CRBG_CityCountyRiver_03-17-25\data\CountyBoundaries_4.js"  >5Meg
+PetyrRolls_7-7-25\GeolHydroEcol\CRBG_CityCountyRiver_03-17-25\data\selectedNHDWAMajor_NHDStreams_5.js" >5Meg
+
+
+11:32 PM 7/8/2025
+In summary we have created a new local repository at 
+C:\Users\petyr\OneDrive\Desktop\PetyrRollsAll\AlexGitHub\PetyrRolls_7-7-25
+and figured out a bunch of git commands.  We have gotten the short stories, the electrical engineering and the geolhydroecol sections to work following alex's format.  however the geology maps are not working nor are the water trail maps.  I need to find working versions of these and copy them into this repository.
+
+lets start with the geology maps.
+C:\Users\petyr\OneDrive\Desktop\PetyrRollsAll\PeterRollsWebArchive\PetyrRolls_3-29-25\GeolHydroEcol\CRBG_CityCountyRiver_03-17-25 has a working copy of the web map and the original is located at 
+"C:\Users\petyr\OneDrive\Desktop\Environmental Science\CPRA Geology QGIS\CRBG_CityCountyRiver_03-17-25_webtest.qgz"
+This was copied to this repository and now works as expected.
+
+"C:\Users\petyr\OneDrive\Desktop\PetyrRollsAll\PeterRollsWebArchive\PetyrRolls_3-29-25\GeolHydroEcol\GeoSurfMap_03-18-25" also has a working copy and this was copied to this repository and works as expected.  the original is located at 
+"C:\Users\petyr\OneDrive\Desktop\Environmental Science\CPRA Geology QGIS\GeoSurfMapWA_V4_Web.qgz"
+
+"C:\Users\petyr\OneDrive\Desktop\PetyrRollsAll\PeterRollsWebArchive\PetyrRolls_3-29-25\GeolHydroEcol\FranklinPascoConservationSitesMap" is a working copy and was copied to this repository and works as expected.  the original is at 
+"C:\Users\petyr\OneDrive\Desktop\PetyrRollsAll\WebDevelopment\QGIS_WEB\ChiawanaAndTaptealWaterTrails\PotentialRehabilitationSite_v4.qgz" atlthough it has been edited since the web version was created.
+
+There is also a file at 
+file:///C:/Users/petyr/OneDrive/Desktop/PetyrRollsAll/PeterRollsWebArchive/PetyrRolls_3-29-25/GeolHydroEcol/GeologyMap_qgis2web/GeologyMap_index.html
+which is a more detailed verion of the GeoSurfMap above but we dont use it so I deleted the unworking copy from this repository.
+
+
+
+10:00 AM 7/7/2025
+This is a new ReadMe file
+This repository was created with
+making a new repository
+$ pwd
+	/c/Users/petyr/OneDrive/Desktop/PetyrRollsAll/AlexGitHub/PetyrRolls
+$ cd ..
+$ mkdir PetyrRolls_7-7-25
+$ cd PetyrRolls_7-7-25/
+$ git init
+$ git branch
+$ touch ReadMe
+$ git add ReadMe
+$ git commit -m "Added empty ReadMe file"
+$ git branch
+	* master
+	Edited this file to add above text
+$ git add ReadMe
+$ git commit -m "Edited ReadMe file"
+	Copied scripts.js, index.html,CWT_SiteTemplate.css and images folder
+$ git add .
+$ git commit -m "Added scripts.js, index.html, CWT_SiteTemplate.css and images folder"
+
+git add --recursive . may be more useful as the . adds new files but
+not clear if it is recursive. actually recursive is not an option
+
+Added shortstories ElecEng and GeolHydroEco
+Also favicon to shortstories 
+
+The EE section had mixed modal nonmodal elements and was a bit disorganized. It works but would be nice is it was all modal.  There are also spacing problems with bottom margin.  Some unused files were eliminated and the EE hobby section turned into a modal format.
+	SplitRailSMPS.html
+		SplitRailFlyBack_SMPS_Report.pdf
+		https://github.com/petyrrollsgh/Flyback_SMPS
+	EchemInst.html
+		'Electrochemical Instrumentation for Electrical Engineers.pdf'
+	Universal Sensor Interface
+		UnivSensorInterfaceV2.html
+			UniversalSensorInterface.pdf
+	Electrical Engineering as a Hobby
+		EEHobby.html
+			'A New Hobbyists Perspective On Learning Electrical Engineering.pdf'
+
+	ArchiveTrash  this was deleted
+		ElecEngHobby.html
+		ElecEngIntro.html
+		ElecEngTopicTemplate.html
+		UnivSensorInterface.html
+
+The Short Story section seems to be good.
+
+$ ls GeolHydroEcol/
+	 GeolHydroEcol_index.html 
+		 MidColGeology.html
+			'Geology of the Mid-Columbia Basin.pdf' 
+			CRBG_CityCountyRiver_03-17-25/
+				index.html	(THIS MAP NFG)
+			GeoSurfMap_03-18-25/
+				index.html	(THIS MAP NFG)
+		GeologyMap_qgis2web/
+		MidColHydrology.html
+		MidColEcology.html
+		MidColRiparian.html
+		FranklinPascoConservationSitesMap/
+			FPCS_index.html	(THIS MAP NFG)
+			
+All of the maps in the geolhydroecol section do not work.  
+some just dont do anything while others give lfs errors.
+
+
+
