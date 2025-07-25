@@ -37,7 +37,7 @@ var json_Selph2Chiawana_V2_3 = {
 			"ExternLink":"https://www.pasco-wa.gov/Facilities/Facility/Details/Chiawana-Park-14",
 			"SOSLink":null,
 			"PublicLink":"HTMLdocs\\ChiawanaPark.html",
-			"PhotoPath":"Images\\IMG_0920.jpeg"},
+			"PhotoPath":"images\\IMG_0920.jpeg"},
 		"geometry":{"type":"Point","coordinates":[-119.207968766258944,46.244317013994532]}},
 		
 		{"type":"Feature",
@@ -49,7 +49,7 @@ var json_Selph2Chiawana_V2_3 = {
 			"ExternLink":"https://www.pasco-wa.gov/Facilities/Facility/Details/Chiawana-Park-14",
 			"SOSLink":null,
 			"PublicLink":"HTMLdocs\\ChiawanaPark.html",
-			"PhotoPath":"Images\\IMG_0919.jpeg"},
+			"PhotoPath":"images\\IMG_0919.jpeg"},
 		"geometry":{"type":"Point","coordinates":[-119.216810640893414,46.247723810389687]}},
 		
 		{"type":"Feature",
@@ -61,7 +61,7 @@ var json_Selph2Chiawana_V2_3 = {
 			"ExternLink":null,
 			"SOSLink":null,
 			"PublicLink":"HTMLdocs\\BendHMU.html",
-			"PhotoPath":"Images\\IMG_0874.jpeg"},
+			"PhotoPath":"images\\IMG_0874.jpeg"},
 		"geometry":{"type":"Point","coordinates":[-119.257529752911395,46.272130438162776]}},
 		
 		{"type":"Feature",
@@ -73,7 +73,7 @@ var json_Selph2Chiawana_V2_3 = {
 			"ExternLink":null,
 			"SOSLink":null,
 			"PublicLink":"HTMLdocs\\BendHMU.html",
-			"PhotoPath":"Images\\IMG_0883.jpeg"},
+			"PhotoPath":"images\\IMG_0883.jpeg"},
 		"geometry":{"type":"Point","coordinates":[-119.263045452002501,46.279255873584013]}},
 		
 		{"type":"Feature",
@@ -85,7 +85,7 @@ var json_Selph2Chiawana_V2_3 = {
 			"ExternLink":null,
 			"SOSLink":null,
 			"PublicLink":"HTMLdocs\\BendHMU.html",
-			"PhotoPath":"Images\\IMG_0868.jpeg"},
+			"PhotoPath":"images\\IMG_0868.jpeg"},
 		"geometry":{"type":"Point","coordinates":[-119.263172209597343,46.285459237656738]}}
 	]
 }

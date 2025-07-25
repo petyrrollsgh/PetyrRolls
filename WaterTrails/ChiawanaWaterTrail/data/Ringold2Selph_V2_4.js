@@ -148,7 +148,7 @@ var json_Ringold2Selph_V2_4 = {
 			"PhotoPath":"images\\SelphLanding75-0.jpeg"},
 		"geometry":{"type":"Point","coordinates":[-119.249088738551436,46.32120383314841]}},
 		
-		{"type":"Feature",
+/* 		{"type":"Feature",
 		"properties":{
 			"id":"11",
 			"Name":"Dent Wasteway",
@@ -158,7 +158,7 @@ var json_Ringold2Selph_V2_4 = {
 			"SOSLink":null,
 			"PublicLink":"HTMLdocs\\DentWasteway.html",
 			"PhotoPath":null},
-		"geometry":{"type":"Point","coordinates":[-119.25306921399729,46.30022961509583, ]}},
+		"geometry":{"type":"Point","coordinates":[-119.25306921399729,46.30022961509583, ]}}, */
 
 	]
 }
